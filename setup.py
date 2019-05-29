@@ -48,6 +48,9 @@ setup(
     install_requires=[
         'setuptools',
         # -*- Extra requirements: -*-
+        'plone.app.themingplugins',
+        'collective.themefragments',
+        'collective.themesitesetup',
         'z3c.jbot',
         'Products.GenericSetup>=1.8.2',
         'plone.api>=1.8.4',
