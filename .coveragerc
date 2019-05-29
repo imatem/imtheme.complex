@@ -1,0 +1,6 @@
+[report]
+include =
+    src/imtheme/*
+omit =
+    */test*
+    */upgrades/*

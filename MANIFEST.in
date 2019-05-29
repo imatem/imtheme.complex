@@ -1,0 +1,4 @@
+graft src/imtheme
+graft docs
+include *.rst
+global-exclude *.pyc
