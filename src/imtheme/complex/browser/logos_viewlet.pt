@@ -16,15 +16,22 @@
   ul.globallinks li{
     margin: 7px;
   }
+
+  .vertical-center{
+    padding-top: 11px;
+    padding-right: 10px;
+  }
 </style>
 <div class="logos-home">
-  <a style="padding-right: 10px;" href="http://www.unam.mx">
-      <img src="/infomatem/logounamP.png" alt="UNAM" />
+    <a href="http://www.unam.mx">
+        <img  class="vertical-center" src="++resource++imtheme.complex/images/logo_unam.png" alt="UNAM" />
+    </a>
+
+    <a href="/">
+    <img   class="vertical-center" src="++resource++imtheme.complex/images/logo_imunam.png" alt="Instituto de Matemáticas" />
   </a>
 
-  <a href="/">
-    <img class="logo-imunam" src="/infomatem/logomatemP.png" alt="Instituto de Matemáticas" />
-  </a>
+
   <ul class="globallinks">
     <li><a href="https://www.matem.unam.mx/acerca-de/unidades">Sedes del IMUNAM</a></li>
     <li><a href="https://www.matem.unam.mx/acerca-de/comollegar">Cómo llegar</a></li>
