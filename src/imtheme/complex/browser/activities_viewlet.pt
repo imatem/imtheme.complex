@@ -1,0 +1,106 @@
+<tal:block tal:define="isHomePg context/@@plone/isPortalOrPortalDefaultPage;">
+  <div class="slideshow-header-container" tal:condition="isHomePg" tal:define="headers context/@@sliderheader/getHeaders">
+
+    <style>
+      .mySlides {
+        display: none;
+      }
+
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active {
+        background-color: #717171;
+      }
+
+    </style>
+
+
+    <tal:block tal:repeat="header headers">
+        <div class="mySlides fade">
+          <a tal:attributes="href header/url">
+            <img tal:attributes="src header/urlimage" style="width:100%"/>
+          </a>
+        </div>
+      </tal:block>
+
+      <div style="left: 5%;bottom:2%; position: absolute;">
+        <tal:block tal:repeat="x python:range(1, len(headers)+1)">
+          <span class="dot" tal:attributes="onclick string: currentSlide(${x})" style="cursor: pointer;"></span>
+        </tal:block>
+      </div>
+  </div>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function plusSlides(n) {
+      showSlides2(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides2(slideIndex = n);
+    }
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 6000); // Change image every x seconds
+    }
+
+
+    function showSlides2(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+
+    </script>
+</tal:block>

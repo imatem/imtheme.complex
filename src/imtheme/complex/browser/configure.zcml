@@ -18,4 +18,14 @@
       directory="static"
       />
 
+  <!-- viewlet for main page -->
+  <browser:viewlet
+    name="activities-viewlet"
+    manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+    class=".viewlets.ActivitiesViewlet"
+    layer="zope.interface.Interface"
+    template="activities_viewlet.pt"
+    permission="zope2.View"
+    />
+
 </configure>
