@@ -23,7 +23,7 @@
     name="activities-viewlet"
     manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
     class=".viewlets.ActivitiesViewlet"
-    layer="zope.interface.Interface"
+    layer="imtheme.complex.interfaces.IImthemeComplexLayer"
     template="activities_viewlet.pt"
     permission="zope2.View"
   />
@@ -32,8 +32,17 @@
     name="logos-viewlet"
     manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
     class=".viewlets.LogosViewlet"
-    layer="zope.interface.Interface"
+    layer="imtheme.complex.interfaces.IImthemeComplexLayer"
     template="logos_viewlet.pt"
+    permission="zope2.View"
+    />
+
+    <browser:viewlet
+    name="plone.searchbox"
+    manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+    class="plone.app.layout.viewlets.common.SearchBoxViewlet"
+    template="searchbox.pt"
+    layer="imtheme.complex.interfaces.IImthemeComplexLayer"
     permission="zope2.View"
     />
 
