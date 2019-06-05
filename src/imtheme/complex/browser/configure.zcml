@@ -26,6 +26,15 @@
     layer="zope.interface.Interface"
     template="activities_viewlet.pt"
     permission="zope2.View"
+  />
+
+  <browser:viewlet
+    name="logos-viewlet"
+    manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+    class=".viewlets.LogosViewlet"
+    layer="zope.interface.Interface"
+    template="logos_viewlet.pt"
+    permission="zope2.View"
     />
 
 </configure>
