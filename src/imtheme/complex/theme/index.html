@@ -1,13 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Plone Theme</title>
-  <head>
-  <body>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 80%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.herramientas{
+  background-color: #B1C5DA;
+  width: 80%;
+  margin: auto;
+}
+
+.top{
+  background-color: blue;
+  height:54px;
+}
+
+.content{
+  background-color: #DFE6E9;
+  width: 100%;
+}
+
+.submenu{
+  background-color: green;
+  height: 192px;
+  margin: auto;
+  width: 80%;
+}
+
+.navbar{
+  background-color: red;
+
+}
+
+.roller{
+  background-color: purple;
+  width: 80%;
+  margin: auto;
+}
+</style>
+</head>
+<body>
+
+  <div class="top">
+    <div class="herramientas">AQui van las herramientas</div>
+  </div>
+
+  <div class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li style="float:center"><a class="active" href="#about">About</a></li>
+    </ul>
+  </div>
+
+<div class="content">
+  <div class="submenu">
+    logos y opciones
+  </div>
+  <div class="roller">PAL roller</div>
+</div>
 
 
-<!-- This HTML Template is usually replaced by your theme files ;) -->
-
-FOO
-  </body>
+</body>
 </html>
