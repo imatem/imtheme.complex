@@ -12,10 +12,10 @@
       />
 
   <!-- Publish static files -->
-  <plone:static
+  <browser:resourceDirectory
       name="imtheme.complex"
-      type="plone"
       directory="static"
+      layer="imtheme.complex.interfaces.IImthemeComplexLayer"
       />
 
   <!-- viewlet for main page -->
