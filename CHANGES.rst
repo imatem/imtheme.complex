@@ -5,5 +5,8 @@ Changelog
 1.0a1 (unreleased)
 ------------------
 
-- Initial release.
-  [imatem]
+- Viewlets registration.
+  [adriana-rv]
+
+- Theme registration.
+  [gil-cano]
