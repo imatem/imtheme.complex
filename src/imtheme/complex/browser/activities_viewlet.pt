@@ -1,45 +1,57 @@
 <tal:block tal:define="isHomePg context/@@plone/isPortalOrPortalDefaultPage;">
-  <div class="slideshow-header-container" tal:condition="isHomePg" tal:define="headers context/@@sliderheader/getHeaders">
 
-    <style>
-      .mySlides {
-        display: none;
-      }
+  <style>
 
-      /* Fading animation */
-      .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-      }
+    /*.slideshow-header-container {
+      position: relative;
+      margin: auto;
+    }*/
 
-      @-webkit-keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-      }
+    .mySlides {
+      display: none;
+      width: 80%;
+      margin: auto;
+    }
 
-      @keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-      }
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
 
-      /* The dots/bullets/indicators */
-      .dot {
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-      }
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
 
-      .active {
-        background-color: #717171;
-      }
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
 
     </style>
+
+
+  <div class="slideshow-header-container" tal:condition="isHomePg" tal:define="headers context/@@sliderheader/getHeaders">
+
+
 
 
     <tal:block tal:repeat="header headers">
@@ -50,7 +62,7 @@
         </div>
       </tal:block>
 
-      <div style="left: 5%;bottom:2%; position: absolute;">
+      <div style="left: 12%;bottom:2%; position: absolute;">
         <tal:block tal:repeat="x python:range(1, len(headers)+1)">
           <span class="dot" tal:attributes="onclick string: currentSlide(${x})" style="cursor: pointer;"></span>
         </tal:block>
