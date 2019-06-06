@@ -26,7 +26,7 @@
     padding-right: 5%;
     padding-left: 5%;
     background-color: #B1C5DA;
-    height: 58px;
+    height: 56px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -38,7 +38,7 @@
   }
 
   .emailviewlet{
-    height: 58px;
+    height: 56px;
     float: left;
     display: flex;
     justify-content: center;
