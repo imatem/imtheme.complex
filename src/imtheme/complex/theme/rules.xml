@@ -4,27 +4,40 @@
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
        xmlns:xi="http://www.w3.org/2001/XInclude">
 
-
-  <!-- Include barceloneta's backend.xml for backend theming. -->
-  <!-- <xi:include href="++theme++barceloneta/backend.xml"><xi:fallback /></xi:include> -->
-  <!--
-    The backend.xml it self uses the following rules condition, to exclude the frontend
-    If you want to include anything just for the backend, you can do the same,
-    by uncommenting the BACKEND ONLY BLOCK.
-  -->
-  <!-- BACKEND ONLY BLOCK -->
-  <!--
-  <rules css:if-not-content="body.frontend#visual-portal-wrapper">
-  </rules>
-  -->
-
   <!-- FRONTEND ONLY BLOCK -->
-  <rules css:if-content="#visual-portal-wrapper">
-    <!--<theme href="home.html" css:if-content=".section-front-page" />-->
-    <theme href="index.html" />
+  <!-- <theme href="index.html" /> -->
+  <notheme css:if-not-content=".section-inicio" />
 
-
+  <rules css:if-content="#portal-top">
+    <!-- Base tag -->
+    <before css:theme="title" css:content="base" />
+    <!-- Title -->
+    <replace css:theme="title" css:content="title" />
+    <!-- Pull in Plone Meta -->
+    <after css:theme-children="head" css:content="head meta" />
+    <!-- CSS -->
+    <after css:theme-children="head" css:content="head link" />
+    <after css:theme-children="head" css:content="head style" />
+    <!-- Script -->
+    <after css:theme-children="head" css:content="head script" />
   </rules>
+
+  <!-- move user bar -->
+  <replace css:theme="#herramientas" css:content="#portal-header .tools" method="raw"/>
+
+  <!-- move global nav -->
+  <replace css:theme-children="#mainnavigation" css:content="#portal-globalnav" />
+  <drop css:content=".globalSectionsLevel1" />
+
+  <!-- move user bar -->
+  <replace css:theme=".submenu" css:content=".logos-home" method="raw"/>
+
+ <!-- move roler -->
+  <replace css:theme="#slider" css:content=".slideshow-header-container" method="raw"/>
+
+
+  <!-- Central column -->
+  <replace css:theme="#content-container" css:content="#portal-column-content" method="raw" />
 
 
 

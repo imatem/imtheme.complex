@@ -1,93 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<style>
-ul {
-  list-style-type: none;
-  margin: auto;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  width: 80%;
-}
+  <head>
+    <meta charset="utf-8">
+    <title>IMUNAM Theme</title>
+    <link rel="shortcut icon" type="image/x-icon"
+          href="favicon.ico?v=2" />
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content=""> -->
+    <link rel="stylesheet" href="less/theme-compiled.css">
+<style type="text/css">
+  #portal-searchbox{
+    clear: none;
+    margin: 3px;
+    padding-right: 10px;
 
-li {
-  float: left;
-}
+  }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+  .searchField{
+    height: 30px;
+  }
 
-li a:hover:not(.active) {
-  background-color: #111;
-}
+  .tools{
+    background-color: #B1C5DA;
+    height: 58px;
+  }
+  .alltools{
+    width: 80%;
+    background-color: green;
+    margin: auto;
+  }
 
-.active {
-  background-color: #4CAF50;
-}
+  .sesionimg{
+    float: right;
+    padding-right: 5%;
+    padding-left: 5%;
+    background-color: #B1C5DA;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
-.herramientas{
-  background-color: #B1C5DA;
-  width: 80%;
-  margin: auto;
-}
+  }
 
-.top{
-  background-color: blue;
-  height:54px;
-}
+  .logintext{
+    margin:10px;
+  }
 
-.content{
-  background-color: #DFE6E9;
-  width: 100%;
-}
+  .emailviewlet{
+    height: 58px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #B1C5DA;
+  }
 
-.submenu{
-  background-color: green;
-  height: 192px;
-  margin: auto;
-  width: 80%;
-}
 
-.navbar{
-  background-color: red;
+  #searchGadget{
+    width: 20em;
+  }
 
-}
+  .searchSection{
+    margin-top: 0px;
+    margin-left: 5em;
+  }
 
-.roller{
-  background-color: purple;
-  width: 80%;
-  margin: auto;
-}
 </style>
-</head>
+  </head>
 <body>
 
-  <div class="top">
-    <div class="herramientas">AQui van las herramientas</div>
+  <div id="herramientas">Aqui van las herramientas</div>
+
+  <div id="mainnavigation-wrapper">
+    <div id="mainnavigation">
+    </div>
   </div>
 
-  <div class="navbar">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li style="float:center"><a class="active" href="#about">About</a></li>
-    </ul>
-  </div>
 
-<div class="content">
   <div class="submenu">
     logos y opciones
   </div>
-  <div class="roller">PAL roller</div>
-</div>
 
+  <div id="slider-wrapper">
+      <div id="slider">Pal roller</div>
+  </div>
+
+      <div class="container">
+        <div class="row">
+          <aside id="global_statusmessage"></aside>
+        </div>
+        <main id="main-container" class="row row-offcanvas row-offcanvas-right">
+          <div id="content-container">
+          </div>
+          <div id="column1-container">
+          </div>
+          <div id="column2-container">
+          </div>
+        </main><!--/row-->
+      </div><!--/container-->
 
 </body>
 </html>
