@@ -1,0 +1,51 @@
+<style>
+  /*#portal-globalnav{
+      background-color: red;
+      display: flex;
+      /*justify-content: center;
+    }*/
+
+  .foo{
+    background-image: linear-gradient(#0F2B4C, #2D4F79);
+
+  }
+
+  #portal-globalnav{
+    width: 80%;
+    margin: auto;
+    background-image: linear-gradient(#0F2B4C, #2D4F79)
+  }
+
+  #portal-globalnav li a{
+   background-image: linear-gradient(#0F2B4C, #2D4F79);
+   color: white;
+
+  }
+
+
+</style>
+
+<div class="foo">
+  <tal:tabs tal:define="menu view/createMenu"
+            tal:condition="menu"
+            i18n:domain="plone"
+      ><p class="hiddenStructure"
+          i18n:translate="heading_sections"
+          >Navigation</p
+      ><ul id="portal-globalnav"
+           tal:attributes="class python:view.conf.mobile_menu and 'mobileMenuOn' or nothing"
+          ><li tal:replace="structure menu"
+              >DropDown Menu</li
+          ></ul
+      ><div class="mobileMenu"
+            tal:condition="view/conf/mobile_menu"
+          ><select id="portal-globalnav-mobile"
+                   tal:content="structure view/createMenuMobile"
+                   onchange="location = this.options[this.selectedIndex].value;"
+              ><option value="" selected="selected"
+                  >Menu</option
+              ></select
+          ></div
+      ></tal:tabs
+  >
+</div>

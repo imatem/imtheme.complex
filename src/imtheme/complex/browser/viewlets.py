@@ -1,7 +1,10 @@
 from plone.app.layout.viewlets import ViewletBase
 from Products.CMFCore.utils import getToolByName
 from plone.app.layout.viewlets.common import SearchBoxViewlet
+# from plone.app.layout.viewlets.common import GlobalSectionsViewlet
+from quintagroup.dropdownmenu.browser.viewlets import GlobalSectionsViewlet
 from zope.component import getMultiAdapter
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 
 class ActivitiesViewlet(ViewletBase):
@@ -48,4 +51,8 @@ class IMSearchBoxViewlet(SearchBoxViewlet):
 
     def gologin(self):
         return "%s/login" % self.navigation_root_url
+
+
+class IMGlobalSectionsViewlet(GlobalSectionsViewlet):
+    index = ViewPageTemplateFile('sections2.pt')
 
