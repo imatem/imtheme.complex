@@ -37,10 +37,11 @@
     permission="zope2.View"
     />
 
+    <!-- class="plone.app.layout.viewlets.common.SearchBoxViewlet" -->
     <browser:viewlet
     name="plone.searchbox"
     manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-    class="plone.app.layout.viewlets.common.SearchBoxViewlet"
+    class =".viewlets.IMSearchBoxViewlet"
     template="searchbox.pt"
     layer="imtheme.complex.interfaces.IImthemeComplexLayer"
     permission="zope2.View"
