@@ -23,8 +23,8 @@
 
   .sesionimg{
     float: right;
-    padding-right: 15%;
-    padding-left: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
     background-color: #B1C5DA;
     height: 58px;
     display: flex;
@@ -47,9 +47,14 @@
   }
 
 
-  /*#searchGadget{
-    width: 100%;
-  }*/
+  #searchGadget{
+    width: 20em;
+  }
+
+  .searchSection{
+    margin-top: 0px;
+    margin-left: 5em;
+  }
 
 </style>
 
@@ -95,6 +100,7 @@
                   i18n:translate="text_search">Search Site</label>
 
           <div style="display: flex;">
+            <b class="logintext">Buscar</b>
             <input name="SearchableText"
                    type="text"
                    size="28"
