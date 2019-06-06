@@ -1,27 +1,55 @@
 
 <style>
   #portal-searchbox{
-    margin-top:0.5em;
-    margin-right:10em;
+    clear: none;
+    margin: 3px;
+    padding-right: 10px;
+
   }
-  /*.searchButtonIMG {
-    background:url(/infomatem/lupa.png) no-repeat;
-    width: 32px;
-    height: 32px;
-  }*/
+
   .searchField{
-    height: 32px;
+    height: 30px;
   }
 
   .tools{
     background-color: #B1C5DA;
-    height: 54px;
+    height: 58px;
   }
   .alltools{
     width: 80%;
-    /*background-color: green;*/
+    background-color: green;
     margin: auto;
   }
+
+  .sesionimg{
+    float: right;
+    padding-right: 15%;
+    padding-left: 10%;
+    background-color: #B1C5DA;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  .logintext{
+    margin:10px;
+  }
+
+  .email{
+    height: 58px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #B1C5DA;
+  }
+
+
+  /*#searchGadget{
+    width: 100%;
+  }*/
 
 </style>
 
@@ -29,9 +57,28 @@
 
   <div class="alltools">
 
-    <a href="">
-        <img src="++resource++imtheme.complex/images/mail.png" align="left" /> Correo Interno
-    </a>
+    <div class="email">
+      <a  href="">
+          <img src="++resource++imtheme.complex/images/mail.png" align="left" /> <b class="logintext">Correo Interno</b>
+      </a>
+    </div>
+
+    <div class="sesionimg">
+      <tal:block condition="view/is_anonymous">
+        <a tal:attributes="href view/gologin">
+          <b class="logintext">Entrar</b>
+          <img src="++resource++imtheme.complex/images/entrar.png" align="right" />
+        </a>
+      </tal:block>
+
+      <tal:block condition="not: view/is_anonymous">
+        <a tal:define="userinfo view/user_name_home"
+           tal:attributes="href userinfo/homelink">
+          <b class="logintext" tal:content="userinfo/name">John</b>
+          <img src="++resource++imtheme.complex/images/usuario.png" align="right" />
+        </a>
+      </tal:block>
+    </div>
 
     <div id="portal-searchbox"
          i18n:domain="plone"
@@ -50,7 +97,7 @@
           <div style="display: flex;">
             <input name="SearchableText"
                    type="text"
-                   size="18"
+                   size="28"
                    value=""
                    title="Search Site"
                    placeholder="Search Site"
@@ -93,6 +140,9 @@
         </a>
       </div>
 
-    </div>
+
+    </div><!-- end searchbox -->
+
   </div>
 </div>
+<div style="clear: both;"></div>
