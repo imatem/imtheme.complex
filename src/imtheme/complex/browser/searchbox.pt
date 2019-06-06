@@ -37,7 +37,7 @@
     margin:10px;
   }
 
-  .email{
+  .emailviewlet{
     height: 58px;
     float: left;
     display: flex;
@@ -62,7 +62,7 @@
 
   <div class="alltools">
 
-    <div class="email">
+    <div class="emailviewlet">
       <a  href="">
           <img src="++resource++imtheme.complex/images/mail.png" align="left" /> <b class="logintext">Correo Interno</b>
       </a>

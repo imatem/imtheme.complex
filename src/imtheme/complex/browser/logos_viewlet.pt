@@ -11,32 +11,64 @@
     display: inline-grid;
     float: right;
     list-style-type: circle;
+    height: 193px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #DFE6E9;
+    padding-right: 10px;
   }
 
   ul.globallinks li{
-    margin: 7px;
+    margin: 8px;
   }
 
-  .vertical-center{
-    padding-top: 11px;
-    padding-right: 10px;
+  .imagelogos{
+    float: left;
+    padding-right: 20px;
+    height: 193px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #DFE6E9;
   }
 </style>
 <div class="logos-home">
-    <a href="http://www.unam.mx">
-        <img  class="vertical-center" src="++resource++imtheme.complex/images/logo_unam.png" alt="UNAM" />
-    </a>
 
-    <a href="/">
-    <img   class="vertical-center" src="++resource++imtheme.complex/images/logo_imunam.png" alt="Instituto de Matemáticas" />
-  </a>
+    <div class="imagelogos">
+      <a href="http://www.unam.mx">
+        <img class="vertical-center" src="++resource++imtheme.complex/images/logo_unam.png" alt="UNAM" align="left"/>
+      </a>
+    </div>
+    <div class="imagelogos">
+      <a href="/">
+        <img class="vertical-center" src="++resource++imtheme.complex/images/logo_imunam.png" alt="Instituto de Matemáticas" align="right"/>
+      </a>
+    </div>
+
+    <tal:block condition="not: view/is_anonymous">
+
+      <!-- tal:attributes="id string:personaltools-${action/id}" -->
+      <ul class="globallinks">
+        <li tal:repeat="action view/user_actions">
+            <a href=""
+               tal:attributes="href action/url"
+               tal:content="action/title"
+               i18n:translate=""
+               i18n:domain="plone">
+                action title
+            </a>
+        </li>
+      </ul>
+    </tal:block>
+
+      <ul class="globallinks">
+        <li><a href="https://www.matem.unam.mx/acerca-de/unidades">Sedes del IMUNAM</a></li>
+        <li><a href="https://www.matem.unam.mx/acerca-de/comollegar">Cómo llegar</a></li>
+        <li><a href="https://www.matem.unam.mx/inicio/contact-info-im">Contacto</a></li>
+        <li><a href="https://www.matem.unam.mx/acerca-de/estructura-interna/secretaria-academica/informes/anuales">Informes y planeación IMUNAM</a></li>
+        <li><a href="https://proyectos.matem.unam.mx/igualdad">Igualdad IMUNAM</a></li>
+      </ul>
 
 
-  <ul class="globallinks">
-    <li><a href="https://www.matem.unam.mx/acerca-de/unidades">Sedes del IMUNAM</a></li>
-    <li><a href="https://www.matem.unam.mx/acerca-de/comollegar">Cómo llegar</a></li>
-    <li><a href="https://www.matem.unam.mx/inicio/contact-info-im">Contacto</a></li>
-    <li><a href="https://www.matem.unam.mx/acerca-de/estructura-interna/secretaria-academica/informes/anuales">Informes y planeación IMUNAM</a></li>
-    <li><a href="https://proyectos.matem.unam.mx/igualdad">Igualdad IMUNAM</a></li>
-  </ul>
 </div>

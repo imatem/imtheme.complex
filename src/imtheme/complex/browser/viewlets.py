@@ -1,6 +1,7 @@
 from plone.app.layout.viewlets import ViewletBase
 from Products.CMFCore.utils import getToolByName
 from plone.app.layout.viewlets.common import SearchBoxViewlet
+from zope.component import getMultiAdapter
 
 
 class ActivitiesViewlet(ViewletBase):
@@ -8,7 +9,17 @@ class ActivitiesViewlet(ViewletBase):
 
 
 class LogosViewlet(ViewletBase):
-    pass
+
+    def is_anonymous(self):
+        portal_membership = getToolByName(self.context, 'portal_membership', None)
+        return portal_membership.isAnonymousUser()
+
+    def user_actions(self):
+        context_state = getMultiAdapter((self.context, self.request),
+                                        name=u'plone_context_state')
+
+        actions = context_state.actions('user')
+        return actions
 
 
 class IMSearchBoxViewlet(SearchBoxViewlet):
