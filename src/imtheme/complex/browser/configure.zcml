@@ -20,32 +20,32 @@
 
   <!-- viewlet for main page -->
   <browser:viewlet
-    name="activities-viewlet"
-    manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-    class=".viewlets.ActivitiesViewlet"
-    layer="imtheme.complex.interfaces.IImthemeComplexLayer"
-    template="activities_viewlet.pt"
-    permission="zope2.View"
-  />
+      name="activities-viewlet"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".viewlets.ActivitiesViewlet"
+      layer="imtheme.complex.interfaces.IImthemeComplexLayer"
+      template="activities_viewlet.pt"
+      permission="zope2.View"
+      />
 
   <browser:viewlet
-    name="logos-viewlet"
-    manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-    class=".viewlets.LogosViewlet"
-    layer="imtheme.complex.interfaces.IImthemeComplexLayer"
-    template="logos_viewlet.pt"
-    permission="zope2.View"
-    />
+      name="logos-viewlet"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".viewlets.LogosViewlet"
+      layer="imtheme.complex.interfaces.IImthemeComplexLayer"
+      template="logos_viewlet.pt"
+      permission="zope2.View"
+      />
 
-    <!-- class="plone.app.layout.viewlets.common.SearchBoxViewlet" -->
-    <browser:viewlet
-    name="plone.searchbox"
-    manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-    class =".viewlets.IMSearchBoxViewlet"
-    template="searchbox.pt"
-    layer="imtheme.complex.interfaces.IImthemeComplexLayer"
-    permission="zope2.View"
-    />
+  <!-- class="plone.app.layout.viewlets.common.SearchBoxViewlet" -->
+  <browser:viewlet
+      name="plone.searchbox"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class =".viewlets.IMSearchBoxViewlet"
+      template="searchbox.pt"
+      layer="imtheme.complex.interfaces.IImthemeComplexLayer"
+      permission="zope2.View"
+      />
 
     <browser:viewlet
     name="im.global_sections"

@@ -1,0 +1,64 @@
+
+#mainnavigation-wrapper {
+    background: linear-gradient(to bottom, #0F2B4C, #2D4F79);
+}
+
+#mainnavigation {
+    width: 1200px;
+    margin: auto;
+}
+
+#mainnavigation ul {
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+/*
+.active {
+    background-color: #4CAF50;
+}
+
+.herramientas{
+    background-color: #B1C5DA;
+    width: 80%;
+    margin: auto;
+}
+
+.top{
+    background-color: blue;
+    height:54px;
+}
+
+.content{
+    background-color: #DFE6E9;
+    width: 100%;
+}
+
+.submenu{
+    background-color: green;
+    height: 192px;
+    margin: auto;
+    width: 80%;
+}
+
+.navbar{
+    background-color: red;
+}
+
+.roller{
+    background-color: purple;
+    width: 80%;
+    margin: auto;
+}
+*/
