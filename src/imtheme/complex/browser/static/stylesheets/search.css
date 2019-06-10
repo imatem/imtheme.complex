@@ -1,3 +1,16 @@
+/*For menu display */
+#portal-globalnav{
+    background-image: linear-gradient(#0F2B4C, #2D4F79) !important;
+}
+
+#portal-globalnav li a{
+   background-image: linear-gradient(#0F2B4C, #2D4F79) !important;
+   color: white;
+
+   }
+
+
+/*For searchbox*/
 #portal-searchbox{
   clear: none;
   margin: 3px;
