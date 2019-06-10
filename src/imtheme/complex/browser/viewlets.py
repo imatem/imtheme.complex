@@ -1,10 +1,17 @@
+# -*- coding: utf-8 -*-
 from plone.app.layout.viewlets import ViewletBase
-from Products.CMFCore.utils import getToolByName
 from plone.app.layout.viewlets.common import SearchBoxViewlet
-# from plone.app.layout.viewlets.common import GlobalSectionsViewlet
-from quintagroup.dropdownmenu.browser.viewlets import GlobalSectionsViewlet
-from zope.component import getMultiAdapter
+from Products.CMFCore.utils import getToolByName
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from zope.component import getMultiAdapter
+
+
+try:
+    from quintagroup.dropdownmenu.browser.viewlets import GlobalSectionsViewlet
+    HAS_DROPDOWNMENU = True
+except ImportError:
+    from plone.app.layout.viewlets.common import GlobalSectionsViewlet
+    HAS_DROPDOWNMENU = False
 
 
 class ActivitiesViewlet(ViewletBase):

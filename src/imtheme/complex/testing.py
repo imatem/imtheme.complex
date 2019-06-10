@@ -20,8 +20,6 @@ class ImthemeComplexLayer(PloneSandboxLayer):
         # layer.
         import plone.app.dexterity
         self.loadZCML(package=plone.app.dexterity)
-        import plone.restapi
-        self.loadZCML(package=plone.restapi)
         self.loadZCML(package=imtheme.complex)
 
     def setUpPloneSite(self, portal):

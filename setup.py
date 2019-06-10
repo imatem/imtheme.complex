@@ -52,7 +52,7 @@ setup(
         # 'collective.themefragments',
         # 'collective.themesitesetup',
         'z3c.jbot',
-        # 'plone.api>=1.8.5',
+        'plone.api>=1.8.5',
     ],
     extras_require={
         'test': [
