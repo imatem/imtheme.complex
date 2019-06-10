@@ -6,14 +6,6 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from zope.component import getMultiAdapter
 
 
-try:
-    from quintagroup.dropdownmenu.browser.viewlets import GlobalSectionsViewlet
-    HAS_DROPDOWNMENU = True
-except ImportError:
-    from plone.app.layout.viewlets.common import GlobalSectionsViewlet
-    HAS_DROPDOWNMENU = False
-
-
 class ActivitiesViewlet(ViewletBase):
     pass
 
@@ -58,8 +50,4 @@ class IMSearchBoxViewlet(SearchBoxViewlet):
 
     def gologin(self):
         return "%s/login" % self.navigation_root_url
-
-
-class IMGlobalSectionsViewlet(GlobalSectionsViewlet):
-    index = ViewPageTemplateFile('sections2.pt')
 
