@@ -47,14 +47,4 @@
       permission="zope2.View"
       />
 
-    <browser:viewlet
-    name="im.global_sections"
-    manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-    class=".viewlets.IMGlobalSectionsViewlet"
-    template="sections2.pt"
-    layer="imtheme.complex.interfaces.IImthemeComplexLayer"
-    permission="zope2.View"
-    />
-
-
 </configure>
