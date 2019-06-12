@@ -1,6 +1,7 @@
 /*For menu display */
 #portal-globalnav{
     background-image: linear-gradient(#0F2B4C, #2D4F79) !important;
+    margin: 0px !important;
 }
 
 #portal-globalnav li a{
@@ -9,11 +10,15 @@
 
    }
 
+#mainnavigation ul{
+  padding: 0px !important;
+}
+
 
 /*For searchbox*/
 #portal-searchbox{
-  clear: none;
-  margin: 3px;
+  clear: none !important;
+  margin: 3px !important;
   padding-right: 10px;
 
 }
@@ -27,7 +32,7 @@
   height: 58px;
 }
 .alltools{
-  width: 80%;
+  width: 1200px;
   background-color: green;
   margin: auto;
 }
@@ -59,10 +64,57 @@
 
 
 #searchGadget{
-  width: 20em;
+  width: 20em !important;
 }
 
 .searchSection{
   margin-top: 0px;
   margin-left: 5em;
 }
+
+
+/*For logos div*/
+
+#submenu-wrapper{
+  background-color: #DFE6E9;
+}
+
+.logos-home{
+    /*padding: 10px;*/
+    height: 193px;
+    background-color: #DFE6E9;
+    width: 1200px;
+    margin: auto;
+    padding-bottom: 0px;
+  }
+ul.globallinks{
+    display: inline-grid;
+    float: right;
+    list-style-type: circle;
+    height: 193px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #DFE6E9;
+    padding-right: 10px;
+  }
+
+ul.globallinks li{
+    margin: 8px;
+  }
+
+.imagelogos{
+  float: left;
+  padding-right: 20px;
+  height: 193px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #DFE6E9;
+}
+
+
+
+
+
+

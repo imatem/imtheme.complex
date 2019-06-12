@@ -1,40 +1,4 @@
-<style>
-  .logos-home{
-    /*padding: 10px;*/
-    height: 193px;
-    background-color: #DFE6E9;
-    width: 80%;
-    margin: auto;
-    padding-bottom: 0px;
-  }
-  ul.globallinks{
-    display: inline-grid;
-    float: right;
-    list-style-type: circle;
-    height: 193px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #DFE6E9;
-    padding-right: 10px;
-  }
-
-  ul.globallinks li{
-    margin: 8px;
-  }
-
-  .imagelogos{
-    float: left;
-    padding-right: 20px;
-    height: 193px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #DFE6E9;
-  }
-</style>
 <div class="logos-home">
-
     <div class="imagelogos">
       <a href="http://www.unam.mx">
         <img class="vertical-center" src="++resource++imtheme.complex/images/logo_unam.png" alt="UNAM" align="left"/>
