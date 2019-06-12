@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object name="portal_javascripts">
+  <javascript id="++resource++imtheme.complex/js/portalimmain.js" remove="True" />
+</object>

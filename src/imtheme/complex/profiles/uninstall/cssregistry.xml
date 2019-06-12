@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <object name="portal_css">
  <stylesheet id="++resource++imtheme.complex/stylesheets/search.css" remove="True" />
+ <stylesheet id="++resource++imtheme.complex/stylesheets/portalimmain.css" remove="True" />
 </object>
