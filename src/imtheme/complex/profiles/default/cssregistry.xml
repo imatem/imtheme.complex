@@ -4,4 +4,10 @@
      id="++resource++imtheme.complex/stylesheets/search.css"
      cacheable="True" compression="safe"
      />
+  <stylesheet
+     id="++resource++imtheme.complex/stylesheets/portalimmain.css"
+     cacheable="True"
+     compression="safe"
+     expression="context/@@plone/isPortalOrPortalDefaultPage"
+     />
 </object>
