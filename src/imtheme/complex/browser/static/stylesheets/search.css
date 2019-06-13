@@ -114,6 +114,66 @@ ul.globallinks li{
 }
 
 
+/*@media screen and (min-width : 1200px)  {
+
+}
+
+@media screen and (min-width : 1024px) and (max-width : 1199px) {
+}
+
+@media screen and (min-width : 800px) and (max-width : 1023px) {
+}
+
+@media screen and (min-width : 640px) and (max-width : 799px) {
+
+}
+
+@media screen and (min-width : 480px) and (max-width : 639px) {
+}*/
+
+/*iPhone Landscape*/
+/*@media screen and (min-width: 321px) and (max-width: 480px) {
+}*/
+
+/*iPhone Portrait*/
+/*@media screen and (max-width: 320px) {
+}*/
+
+/*
+********************************************
+Plone media
+********************************************
+*/
+
+/*@media only screen and (min-width : 1025px) and (max-width : 1199px) {
+}
+
+@media only screen and (min-width : 769px) and (max-width : 1024px) {
+}
+
+@media only screen and (min-width : 601px) and (max-width : 768px) {
+}*/
+
+/*  * 6. 600px and below-common things for 480px, 600px, and below .. IE 9 ignored this if it had 'only screen' in the query* */
+/*@media (max-width : 600px) {
+}*/
+
+
+/*@media only screen and (min-width : 481px) and (max-width : 600px) {
+}*/
+
+/*  *  8. 480px wide and below many smart phones * */
+/*@media only screen and  (max-width : 480px) {
+}*/
+
+/*iPhone Landscape*/
+/*@media screen and (min-width: 321px) and (max-width: 480px) {
+}*/
+
+/*iPhone Portrait*/
+/*@media screen and (max-width: 320px) {
+}
+*/
 
 
 
