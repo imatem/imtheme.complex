@@ -1,12 +1,12 @@
 /*For gigant  activities slider*/
 .slideshow-header-container{
   background-color: #DFE6E9;
+  max-height: 400px;
 }
 
 .mySlides {
   display: none;
-  width: 1200px;
-  height: 400px;
+  max-width: 1200px;
   margin: auto;
 
 }
@@ -57,3 +57,49 @@
   /*z-index: 6;*/
   /*position: absolute;*/
 }
+
+
+
+
+/*@media screen and (min-width : 1200px)  {
+
+}*/
+
+@media screen and (min-width : 1024px) and (max-width : 1199px) {
+  .mySlides {
+  display: none;
+  max-width: 1024px;
+  margin: auto;
+
+  }
+}
+
+@media screen and (max-width: 1024){
+
+  .mySlides {
+  display: none;
+  max-width: 1024px;
+  margin: auto;
+  }
+}
+
+@media screen and (max-width : 768px){
+  .mySlides {
+    display: none;
+    max-width: 768px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 480px){
+
+  .mySlides {
+    display: none;
+    max-width: 480px;
+    margin: auto;
+
+  }
+}
+
+
+
