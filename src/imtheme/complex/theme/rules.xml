@@ -23,7 +23,7 @@
   </rules>
 
   <!-- move user bar -->
-  <replace css:theme="#herramientas" css:content="#portal-header .tools" method="raw"/>
+  <replace css:theme="#portal-tools" css:content="#portal-header .tools" method="raw"/>
 
   <!-- move global nav -->
   <replace css:theme-children="#mainnavigation" css:content="#portal-globalnav" />
