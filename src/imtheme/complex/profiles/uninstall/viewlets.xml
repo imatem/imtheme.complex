@@ -2,4 +2,6 @@
 <object>
   <order manager="plone.portalheader" skinname="Sunburst Theme" purge="True"/>
   <hidden manager="plone.portalheader" skinname="Sunburst Theme" purge="True"/>
+  <order manager="plone.portalheader" skinname="IM Responsive Theme" purge="True"/>
+  <hidden manager="plone.portalheader" skinname="IM Responsive Theme" purge="True"/>
 </object>

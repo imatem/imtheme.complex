@@ -11,6 +11,8 @@ body {
     background: linear-gradient(to bottom, #0F2B4C, #2D4F79);
 }
 
+.content-center,
+.footer-center,
 .header-center {
     max-width: 1200px;
     margin: 0 auto;
@@ -56,7 +58,16 @@ li a:hover:not(.active) {
     background-color: #111;
 }
 
+#footer-wrapper{
+    float: left;
+    width: 100%;
+    background-color: #DFE6E9;
+}
 
+#portal-footer {
+    margin: 0 auto !important;
+    background-color: #DFE6E9 !important;
+}
 
 /*
 .active {
