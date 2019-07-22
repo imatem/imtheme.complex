@@ -5,7 +5,7 @@
       </a>
     </div>
     <div class="imagelogos">
-      <a href="/">
+      <a tal:attributes="href view/navigation_root_url">
         <img class="vertical-center" src="++resource++imtheme.complex/images/logo_imunam.png" alt="Instituto de Matemáticas" align="right"/>
       </a>
     </div>
