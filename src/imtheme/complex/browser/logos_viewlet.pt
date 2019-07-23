@@ -5,7 +5,7 @@
       </a>
     </div>
     <div class="imagelogos">
-      <a tal:attributes="href view/navigation_root_url">
+      <a tal:attributes="href string:${context/portal_url}">
         <img class="vertical-center" src="++resource++imtheme.complex/images/logo_imunam.png" alt="Instituto de Matemáticas" align="right"/>
       </a>
     </div>
@@ -27,10 +27,10 @@
     </tal:block>
 
       <ul class="globallinks">
-        <li><a href="https://www.matem.unam.mx/acerca-de/unidades">Sedes del IMUNAM</a></li>
-        <li><a href="https://www.matem.unam.mx/acerca-de/comollegar">Cómo llegar</a></li>
-        <li><a href="https://www.matem.unam.mx/inicio/contact-info-im">Contacto</a></li>
-        <li><a href="https://www.matem.unam.mx/acerca-de/estructura-interna/secretaria-academica/informes/anuales">Informes y planeación IMUNAM</a></li>
+        <li><a tal:attributes="href string:${context/portal_url}/acerca-de/unidades">Sedes del IMUNAM</a></li>
+        <li><a tal:attributes="href string:${context/portal_url}/acerca-de/comollegar">Cómo llegar</a></li>
+        <li><a tal:attributes="href string:${context/portal_url}/contact-info-im">Contacto</a></li>
+        <li><a tal:attributes="href string:${context/portal_url}/acerca-de/estructura-interna/secretaria-academica/informes/anuales">Informes y planeación IMUNAM</a></li>
         <li><a href="https://proyectos.matem.unam.mx/igualdad">Igualdad IMUNAM</a></li>
       </ul>
 
