@@ -18,6 +18,36 @@ body {
     margin: 0 auto;
 }
 
+/* Main bar */
+.content-center{
+    margin: 10px auto;
+}
+
+#livesearch0 .LSBox {
+    margin-top: 5px;
+}
+
+#searchGadget {
+    width: 20em !important;
+}
+
+#searchGadget, .LSBox input.searchButton {
+   -moz-appearance: none;
+}
+
+.LSBox .searchSection {
+    margin-top: 0;
+}
+
+.LSBox .logintext2 {
+    color: #205c90;
+}
+
+/* */
+#portal-globalnav li a {
+    padding: 20px 1em 20px !important;
+}
+
 .enhanced .nav .skip {
     position: absolute;
     right: 0;
@@ -67,6 +97,12 @@ li a:hover:not(.active) {
 #portal-footer {
     margin: 0 auto !important;
     background-color: #DFE6E9 !important;
+}
+
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both;
 }
 
 /*
