@@ -5,6 +5,24 @@ body {
     background: #DFE6E9;
 }
 
+.alltools {
+    overflow: hidden;
+}
+.alltools .emailviewlet{
+    margin-left: 10px;
+    height: 54;
+}
+
+.alltools .socialnetworks {
+    float: left;
+    /*margin-left: 50px;*/
+    padding-top: 10px;
+}
+
+.alltools .socialnetworks img{
+    margin-left:  70px;
+}
+
 /* Navigation */
 
 #mainnavigation-wrapper {

@@ -8,6 +8,15 @@
       </a>
     </div>
 
+    <div class="socialnetworks">
+      <a  href="https://www.facebook.com/imateunam/">
+          <img src="++resource++imtheme.complex/images/facebook.png" align="left" />
+      </a>
+      <a  href="https://twitter.com/imate_unam">
+          <img src="++resource++imtheme.complex/images/twitter.png" align="left" />
+      </a>
+    </div>
+
     <div class="sesionimg">
       <tal:block condition="view/is_anonymous">
         <a tal:attributes="href view/gologin">
