@@ -13,8 +13,13 @@
     <before css:theme="title" css:content="base" />
     <!-- Title -->
     <replace css:theme="title" css:content="title" />
+    <!-- Don't use Plone viewport, use the theme's -->
+    <drop content="/html/head/meta[@name='viewport']" />
     <!-- Pull in Plone Meta -->
     <after css:theme-children="head" css:content="head meta" />
+    <!-- Don't use Plone favicon, use the theme's -->
+    <drop content="/html/head/link[@rel='apple-touch-icon']" />
+    <drop content="/html/head/link[@type='image/x-icon']" />
     <!-- CSS -->
     <after css:theme-children="head" css:content="head link" />
     <after css:theme-children="head" css:content="head style" />
