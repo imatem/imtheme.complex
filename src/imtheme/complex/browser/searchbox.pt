@@ -19,27 +19,7 @@
     <nav class="site-nav-search">
       <ul>
         <li>
-          <div class="sesionimg">
-          <tal:block condition="view/is_anonymous">
-            <a tal:attributes="href view/gologin">
-              <b class="logintext">Entrar</b>
-              <img src="++resource++imtheme.complex/images/entrar.png" align="right" />
-            </a>
-          </tal:block>
-
-          <tal:block condition="not: view/is_anonymous">
-            <a tal:define="userinfo view/user_name_home"
-               tal:attributes="href userinfo/homelink">
-              <b class="logintext" tal:content="userinfo/name">John</b>
-              <img src="++resource++imtheme.complex/images/usuario.png" align="right" />
-            </a>
-          </tal:block>
-          </div>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- <div id="portal-searchbox"
+          <div id="portal-searchboxx"
          i18n:domain="plone"
          tal:define="navigation_root_url view/navigation_root_url;
                      search_input_id view/search_input_id;">
@@ -89,8 +69,86 @@
           <div class="LSResult" id="LSResult"><div class="LSShadow" id="LSShadow"></div></div>
         </div>
       </form>
- -->
-      <!-- <div id="portal-advanced-search"
+
+
+
+    </div>
+
+        </li>
+
+        <li>
+          <div class="sesionimg">
+          <tal:block condition="view/is_anonymous">
+            <a tal:attributes="href view/gologin">
+              <b class="logintext">Entrar</b>
+              <img src="++resource++imtheme.complex/images/entrar.png" align="right" />
+            </a>
+          </tal:block>
+
+          <tal:block condition="not: view/is_anonymous">
+            <a tal:define="userinfo view/user_name_home"
+               tal:attributes="href userinfo/homelink">
+              <b class="logintext" tal:content="userinfo/name">John</b>
+              <img src="++resource++imtheme.complex/images/usuario.png" align="right" />
+            </a>
+          </tal:block>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+<!--     <div id="portal-searchbox"
+         i18n:domain="plone"
+         tal:define="navigation_root_url view/navigation_root_url;
+                     search_input_id view/search_input_id;">
+      <form id="searchGadget_form"
+            action="@@search"
+            tal:attributes="action string:${navigation_root_url}/@@search;
+                              id string:${search_input_id}_form;">
+
+        <div class="LSBox" >
+          <label class="hiddenStructure"
+                  tal:attributes="for search_input_id"
+                  i18n:translate="text_search">Search Site</label>
+
+          <div style="display: flex;">
+            <b class="logintext2">Buscar</b>
+            <input name="SearchableText"
+                   type="text"
+                   size="28"
+                   value=""
+                   title="Search Site"
+                   placeholder="Search Site"
+                   accesskey="4"
+                   i18n:attributes="title title_search_site;
+                                    placeholder title_search_site"
+                   tal:attributes="value request/form/SearchableText|nothing;
+                                   id search_input_id"
+                   class="searchField" />
+
+            <input type="image" src="++resource++imtheme.complex/images/lupa.png"/>
+          </div>
+
+          <div class="searchSection">
+            <input id="searchbox_currentfolder_only"
+                   class="noborder"
+                   type="checkbox"
+                   name="path"
+                   tal:attributes="value view/folder_path;
+                                   checked request/form/path|nothing"
+            />
+            <label for="searchbox_currentfolder_only"
+                   i18n:translate="label_searchbox_currentfolder_only"
+                   style="cursor: pointer">
+                only in current section
+            </label>
+          </div>
+
+          <div class="LSResult" id="LSResult"><div class="LSShadow" id="LSShadow"></div></div>
+        </div>
+      </form>
+
+      <div id="portal-advanced-search"
            class="hiddenStructure">
         <a href="#"
            tal:attributes="href string:${navigation_root_url}/@@search"
@@ -98,10 +156,10 @@
            accesskey="5">
             Advanced Search&hellip;
         </a>
-      </div> -->
+      </div>
 
 
-    <!-- </div> -->
+    </div> -->
     <!-- end searchbox -->
 
   </div>

@@ -30,12 +30,27 @@ body {
 
 .site-nav-search {
     flex: 1 1 auto;
+
 }
 
 .site-nav-search ul {
-    display: flex;
     justify-content: flex-end;
+    display: flex;
 }
+
+
+.sesionimg {
+    align-self: center;
+    display: block;
+    padding-top: 17px;
+}
+
+
+#portal-searchboxx{
+    display: inline-block;
+    float: center;
+}
+
 /* Navigation */
 
 #mainnavigation-wrapper {

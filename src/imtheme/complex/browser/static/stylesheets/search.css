@@ -41,17 +41,6 @@ For searchbox
   margin: auto;
 }
 
-.sesionimg{
-  float: right;
-  padding-right: 5%;
-  padding-left: 5%;
-  background-color: #B1C5DA;
-  height: 56px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-}
 
 .logintext{
   margin:10px;
