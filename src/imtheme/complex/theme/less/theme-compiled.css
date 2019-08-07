@@ -27,6 +27,15 @@ body {
     margin-right: 20px;
 }
 
+
+.site-nav-search {
+    flex: 1 1 auto;
+}
+
+.site-nav-search ul {
+    display: flex;
+    justify-content: flex-end;
+}
 /* Navigation */
 
 #mainnavigation-wrapper {
@@ -132,7 +141,7 @@ li a:hover:not(.active) {
     clear:both;
 }
 
-@media screen and (max-width : 768px){
+@media screen and (max-width : 800px){
 
     .mailtext {
         display: none;
@@ -149,6 +158,7 @@ li a:hover:not(.active) {
     .socialnetworks img {
         margin-left: 0px;
         margin-right: 10px;
+        height: 23px;
     }
 }
 /*

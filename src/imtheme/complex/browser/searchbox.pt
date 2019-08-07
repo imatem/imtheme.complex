@@ -15,7 +15,17 @@
       </a>
     </div>
 
-    <div class="sesionimg">
+
+    <nav class="site-nav-search">
+      <ul>
+        <li>
+          Entrar
+        </li>
+      </ul>
+    </nav>
+
+
+<!--     <div class="sesionimg">
       <tal:block condition="view/is_anonymous">
         <a tal:attributes="href view/gologin">
           <b class="logintext">Entrar</b>
@@ -30,7 +40,7 @@
           <img src="++resource++imtheme.complex/images/usuario.png" align="right" />
         </a>
       </tal:block>
-    </div>
+    </div> -->
 
     <!-- <div id="portal-searchbox"
          i18n:domain="plone"
