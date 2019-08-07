@@ -1,4 +1,5 @@
 body {
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     bottom: 0;
@@ -27,6 +28,7 @@ body {
 
 #mainnavigation-wrapper {
     background: linear-gradient(to bottom, #0F2B4C, #2D4F79);
+    font-size: 18px;
 }
 
 .content-center,
@@ -63,7 +65,11 @@ body {
 
 /* */
 #portal-globalnav li a {
-    padding: 20px 1em 20px !important;
+    padding: 20px 8px 20px !important;
+}
+
+#portal-globalnav li:last-child a {
+    border-right: 0 !important;
 }
 
 .enhanced .nav .skip {
