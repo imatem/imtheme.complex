@@ -1,12 +1,10 @@
-<div class="tools">
+<div class="tools clearfix">
 
   <div class="alltools">
 
-    <div class="emailviewlet">
-      <a  href="">
-          <img src="++resource++imtheme.complex/images/mail.png" align="left" /> <b class="logintext">Correo Interno</b>
+      <a  class="mailicon" href="">
+          <img src="++resource++imtheme.complex/images/mail.png" align="left" /> <b class="mailtext logintext">Correo Interno</b>
       </a>
-    </div>
 
     <div class="socialnetworks">
       <a  href="https://www.facebook.com/imateunam/">
@@ -34,7 +32,7 @@
       </tal:block>
     </div>
 
-    <div id="portal-searchbox"
+    <!-- <div id="portal-searchbox"
          i18n:domain="plone"
          tal:define="navigation_root_url view/navigation_root_url;
                      search_input_id view/search_input_id;">
@@ -84,8 +82,8 @@
           <div class="LSResult" id="LSResult"><div class="LSShadow" id="LSShadow"></div></div>
         </div>
       </form>
-
-      <div id="portal-advanced-search"
+ -->
+      <!-- <div id="portal-advanced-search"
            class="hiddenStructure">
         <a href="#"
            tal:attributes="href string:${navigation_root_url}/@@search"
@@ -93,11 +91,11 @@
            accesskey="5">
             Advanced Search&hellip;
         </a>
-      </div>
+      </div> -->
 
 
-    </div><!-- end searchbox -->
+    <!-- </div> -->
+    <!-- end searchbox -->
 
   </div>
 </div>
-<!-- <div style="clear: both;"></div> -->

@@ -7,21 +7,24 @@ body {
 }
 
 .alltools {
-    overflow: hidden;
-}
-.alltools .emailviewlet{
-    margin-left: 10px;
-    height: 54;
+    display: flex;
 }
 
-.alltools .socialnetworks {
-    float: left;
-    /*margin-left: 50px;*/
-    padding-top: 10px;
+.mailicon {
+    padding: 17px 20px;
+    align-self: center;
+    display: block;
 }
 
-.alltools .socialnetworks img{
-    margin-left:  70px;
+.socialnetworks {
+    padding: 12px 20px;
+    align-self: center;
+    display: block;
+}
+
+.socialnetworks img {
+    margin-left: 40px;
+    margin-right: 20px;
 }
 
 /* Navigation */
@@ -129,6 +132,25 @@ li a:hover:not(.active) {
     clear:both;
 }
 
+@media screen and (max-width : 768px){
+
+    .mailtext {
+        display: none;
+    }
+
+    .mailicon {
+        padding: 17px 5px;
+    }
+
+    .socialnetworks {
+        padding: 12px 5px;
+    }
+
+    .socialnetworks img {
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+}
 /*
 .active {
     background-color: #4CAF50;
