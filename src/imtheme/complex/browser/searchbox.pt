@@ -48,7 +48,7 @@
                                    id search_input_id"
                    class="searchField" />
 
-            <input type="image" src="++resource++imtheme.complex/images/lupa.png"/>
+            <input class="lupa" type="image" src="++resource++imtheme.complex/images/lupa.png"/>
           </div>
 
           <div class="searchSection">
