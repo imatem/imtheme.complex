@@ -203,6 +203,14 @@ li a:hover:not(.active) {
         display: none;
     }
 }
+
+@media screen and (max-width : 900px){
+    .imagelogos img{
+        width: 70%;
+        padding-right: 0;
+    }
+}
+
 /*
 .active {
     background-color: #4CAF50;
