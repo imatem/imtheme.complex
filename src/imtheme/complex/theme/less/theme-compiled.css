@@ -63,9 +63,14 @@ body {
 
 /* Navigation */
 
+
 #mainnavigation-wrapper {
     background: linear-gradient(to bottom, #0F2B4C, #2D4F79);
     font-size: 18px;
+}
+
+#mainnavigation-wrapper .skip {
+    display: none;
 }
 
 .content-center,
@@ -119,7 +124,7 @@ body {
     border-right: 0 !important;
 }
 
-.enhanced .nav .skip {
+.enhanced .nav-primary .skip {
     position: absolute;
     right: 0;
     top: 1.4em;
@@ -129,7 +134,7 @@ body {
     height: 2.5em;
 }
 
-.enhanced .nav ul {
+.enhanced .nav-primary ul {
     list-style-type: none;
     max-height: 0;
     overflow: hidden;
@@ -138,11 +143,12 @@ body {
 }
 
 .enhanced .nav ul.open {
-    max-height: 20em;
+    max-height: 100%;
 }
 
-@media screen and (min-width: 39em) {
-    .enhanced .nav ul {
+@media screen and (min-width: 820px) {
+
+    .enhanced .nav-primary ul {
         overflow: auto;
         max-height: inherit;
     }
@@ -174,6 +180,10 @@ li a:hover:not(.active) {
     content:" ";
     display:block;
     clear:both;
+}
+
+.navigation-button {
+    display: none
 }
 
 @media screen and (max-width : 820px){
@@ -232,6 +242,18 @@ li a:hover:not(.active) {
         height: 23px;
     }
 
+    /* navigsation*/
+    #mainnavigation-wrapper .skip {
+        display: inline;
+    }
+
+    .enhanced .nav-primary ul {
+        display: grid;
+    }
+
+    #portal-globalnav li a {
+        padding: 2px 8px 2px !important;
+    }
 }
 
 @media screen and (min-width : 821px){

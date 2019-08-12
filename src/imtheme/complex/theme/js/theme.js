@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
   window.document.documentElement.className += " enhanced";
 
-  var nav = document.querySelector( ".nav ul" ),
-  navToggle = document.querySelector( ".nav .skip" );
+  var nav = document.querySelector( ".nav-primary ul" ),
+  navToggle = document.querySelector( "#mainnavigation-wrapper .skip" );
   if ( navToggle ) {
     navToggle.addEventListener( "click", function( e ) {
       if ( nav.className == "open" ) {
