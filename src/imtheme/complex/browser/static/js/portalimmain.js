@@ -47,4 +47,27 @@ var slideIndex = 0;
       dots[slideIndex-1].className += " active";
     }
 // End activities slider
+
+  // $("#lupis").click(function() {
+  //   var element = document.getElementById("searchbar");
+
+  //   if (element.classList) {
+  //     element.classList.toggle("searchbar");
+  //   } else {
+  //     var classes = element.className.split(" ");
+  //     var i = classes.indexOf("searchbar");
+
+  //     if (i >= 0)
+  //       classes.splice(i, 1);
+  //     else
+  //       classes.push("searchbar");
+  //       element.className = classes.join(" ");
+  //   }
+  // });
+
+  $("#lupis").click(function() {
+    var x = document.getElementById("searchbar");
+    x.classList.toggle("searchbar");
+  });
+
 });

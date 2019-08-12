@@ -1,8 +1,68 @@
+<div class="portal-header-tools">
+
+  <div id="searchbar" class="searchbar">
+    <div id="portal-searchboxy"
+         i18n:domain="plone"
+         tal:define="navigation_root_url view/navigation_root_url;
+                     search_input_id view/search_input_id;">
+      <form id="searchGadget_form"
+            action="@@search"
+            tal:attributes="action string:${navigation_root_url}/@@search;
+                              id string:${search_input_id}_form;">
+
+        <div class="LSBox2" >
+          <label class="hiddenStructure"
+                  tal:attributes="for search_input_id"
+                  i18n:translate="text_search">Search Site</label>
+
+          <div style="display: flex;">
+            <input name="SearchableText"
+                   type="text"
+                   size="38"
+                   value=""
+                   title="Search Site"
+                   placeholder="Search Site"
+                   accesskey="4"
+                   i18n:attributes="title title_search_site;
+                                    placeholder title_search_site"
+                   tal:attributes="value request/form/SearchableText|nothing;
+                                   id search_input_id"
+                   class="searchField" />
+
+            <input class="lupa" type="image" src="++resource++imtheme.complex/images/lupa.png"/>
+          </div>
+
+          <div class="searchSection2">
+            <input id="searchbox_currentfolder_only"
+                   class="noborder"
+                   type="checkbox"
+                   name="path"
+                   tal:attributes="value view/folder_path;
+                                   checked request/form/path|nothing"
+            />
+            <label for="searchbox_currentfolder_only"
+                   i18n:translate="label_searchbox_currentfolder_only"
+                   style="cursor: pointer">
+                only in current section
+            </label>
+          </div>
+
+          <div class="LSResult" id="LSResult"><div class="LSShadow" id="LSShadow"></div></div>
+        </div>
+      </form>
+
+
+
+    </div>
+
+  </div> <!--end searchbar -->
+  <div class="visualClear"><!-- --></div>
+
 <div class="tools clearfix">
 
   <div class="alltools">
 
-      <a  class="mailicon" href="">
+      <a  class="mailicon" tal:attributes="href string:${context/portal_url}/servicios/correo-interno">
           <img src="++resource++imtheme.complex/images/mail.png" align="left" /> <b class="mailtext logintext">Correo Interno</b>
       </a>
 
@@ -13,6 +73,10 @@
       <a  href="https://twitter.com/imate_unam">
           <img src="++resource++imtheme.complex/images/twitter.png" align="left" />
       </a>
+
+      <button id="lupis">
+        <img src="++resource++imtheme.complex/images/lupa.png" align="left" />
+      </button>
     </div>
 
 
@@ -163,4 +227,5 @@
     <!-- end searchbox -->
 
   </div>
+</div>
 </div>

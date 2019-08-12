@@ -6,6 +6,16 @@ body {
     background: #DFE6E9;
 }
 
+
+.searchbar{
+    background-color: red;
+    display: none;
+}
+
+#lupis{
+    display: none;
+}
+
 .alltools {
     display: flex;
 }
@@ -200,6 +210,32 @@ li a:hover:not(.active) {
     }
 
     .searchSection {
+        display: none;
+    }
+
+    /*for change search text box*/
+    #portal-searchboxx{
+        display: none
+    }
+    .searchbar{
+        background-color: red;
+        display: none;
+    }
+
+    #lupis{
+        display: contents;
+        cursor: pointer;
+    }
+    #searchGadget {
+        width: 100% !important;
+        align-self: center;
+        height: 23px;
+    }
+
+}
+
+@media screen and (min-width : 821px){
+    #searchbar{
         display: none;
     }
 }
