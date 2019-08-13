@@ -6,15 +6,16 @@ body {
     background: #DFE6E9;
 }
 
-
 .searchbar{
     background-color: red;
     display: none;
 }
 
+
 #lupis{
     display: none;
 }
+
 
 .alltools {
     display: flex;
@@ -61,9 +62,9 @@ body {
     float: center;
 }
 
+
+
 /* Navigation */
-
-
 #mainnavigation-wrapper {
     background: linear-gradient(to bottom, #0F2B4C, #2D4F79);
     font-size: 18px;
@@ -79,6 +80,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 
 /* Main bar */
 .content-center{
@@ -115,10 +117,12 @@ body {
     color: #205c90;
 }
 
+
 /* */
-#portal-globalnav li a {
+/*#portal-globalnav li a {
     padding: 20px 8px 20px !important;
-}
+}*/
+
 
 #portal-globalnav li:last-child a {
     border-right: 0 !important;
@@ -134,36 +138,20 @@ body {
     height: 2.5em;
 }
 
-.enhanced .nav-primary ul {
-    list-style-type: none;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.25s ease-out;
-    padding: 0;
-}
-
-.enhanced .nav ul.open {
+/*.enhanced .nav ul.open {
     max-height: 100%;
-}
+}*/
 
-@media screen and (min-width: 820px) {
-
-    .enhanced .nav-primary ul {
-        overflow: auto;
-        max-height: inherit;
-    }
-}
-
-
-li a {
+#portal-globalnav li a {
     color: white;
     text-align: center;
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
+
+/*#portal-globalnav li a:hover:not(.active) {
     background-color: #111;
-}
+}*/
 
 #footer-wrapper{
     float: left;
@@ -184,6 +172,16 @@ li a:hover:not(.active) {
 
 .navigation-button {
     display: none
+}
+
+
+
+
+@media screen and (max-width : 900px){
+    .imagelogos img{
+        width: 70%;
+        padding-right: 0;
+    }
 }
 
 @media screen and (max-width : 820px){
@@ -256,54 +254,21 @@ li a:hover:not(.active) {
     }
 }
 
+/*TODO*/
 @media screen and (min-width : 821px){
     #searchbar{
         display: none;
     }
+    /*.enhanced .nav-primary ul {
+        overflow: auto;
+        max-height: inherit;
+    }*/
 }
 
-@media screen and (max-width : 900px){
-    .imagelogos img{
-        width: 70%;
-        padding-right: 0;
-    }
+/*.enhanced .nav-primary ul {
+    list-style-type: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease-out;
+    padding: 0;
 }
-
-/*
-.active {
-    background-color: #4CAF50;
-}
-
-.herramientas{
-    background-color: #B1C5DA;
-    width: 80%;
-    margin: auto;
-}
-
-.top{
-    background-color: blue;
-    height:54px;
-}
-
-.content{
-    background-color: #DFE6E9;
-    width: 100%;
-}
-
-.submenu{
-    background-color: green;
-    height: 192px;
-    margin: auto;
-    width: 80%;
-}
-
-.navbar{
-    background-color: red;
-}
-
-.roller{
-    background-color: purple;
-    width: 80%;
-    margin: auto;
-}
-*/

@@ -32,7 +32,7 @@
 
   <!-- move global nav -->
   <replace css:theme-children="#mainnavigation" css:content="#portal-globalnav" />
-  <drop css:content=".globalSectionsLevel1" />
+  <!-- <drop css:content=".globalSectionsLevel1" /> -->
 
   <!-- move user bar -->
   <replace css:theme=".submenu" css:content=".logos-home" method="raw"/>
