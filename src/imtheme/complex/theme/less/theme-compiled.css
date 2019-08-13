@@ -22,7 +22,7 @@ body {
 }
 
 .mailicon {
-    padding: 17 20px;
+    padding: 17px 20px;
     align-self: center;
     display: block;
 }
@@ -119,9 +119,10 @@ body {
 
 
 /* */
-/*#portal-globalnav li a {
-    padding: 20px 8px 20px !important;
-}*/
+#portal-globalnav li a {
+    padding: 10px 6px !important;
+    font-size: 16px;
+}
 
 
 #portal-globalnav li:last-child a {
@@ -252,6 +253,18 @@ body {
     #portal-globalnav li a {
         padding: 2px 8px 2px !important;
     }
+
+    .enhanced .nav-primary ul {
+        display: none;
+    }
+
+    .enhanced .nav-primary ul.open {
+        display: grid;
+    }
+    .globalSectionsLevel1 {
+        display:  none !important;
+    }
+
 }
 
 /*TODO*/
