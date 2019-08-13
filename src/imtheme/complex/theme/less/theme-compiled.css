@@ -11,11 +11,9 @@ body {
     display: none;
 }
 
-
 #lupis{
     display: none;
 }
-
 
 .alltools {
     display: flex;
@@ -36,8 +34,8 @@ body {
 .socialnetworks img {
     margin-left: 40px;
     margin-right: 20px;
+    height: 23px;
 }
-
 
 .site-nav-search {
     flex: 1 1 auto;
@@ -49,20 +47,16 @@ body {
     display: flex;
 }
 
-
 .sesionimg {
     align-self: center;
     display: block;
     padding-top: 17px;
 }
 
-
 #portal-searchboxx{
     display: inline-block;
     float: center;
 }
-
-
 
 /* Navigation */
 #mainnavigation-wrapper {
@@ -80,7 +74,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 
 /* Main bar */
 .content-center{
@@ -117,13 +110,14 @@ body {
     color: #205c90;
 }
 
-
 /* */
 #portal-globalnav li a {
     padding: 10px 6px !important;
     font-size: 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
 }
-
 
 #portal-globalnav li:last-child a {
     border-right: 0 !important;
@@ -138,17 +132,6 @@ body {
     width: 2.5em;
     height: 2.5em;
 }
-
-/*.enhanced .nav ul.open {
-    max-height: 100%;
-}*/
-
-#portal-globalnav li a {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
-
 
 /*#portal-globalnav li a:hover:not(.active) {
     background-color: #111;
@@ -176,8 +159,6 @@ body {
 }
 
 
-
-
 @media screen and (max-width : 900px){
     .imagelogos img{
         width: 70%;
@@ -202,7 +183,6 @@ body {
     .socialnetworks img {
         margin-left: 0px;
         margin-right: 10px;
-        height: 23px;
     }
 
     .sesionimg .logintext {
