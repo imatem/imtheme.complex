@@ -4,7 +4,7 @@
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
        xmlns:xi="http://www.w3.org/2001/XInclude">
 
-  <theme href="index.html" />
+  <theme href="index.html" css:if-content="#visual-portal-wrapper" />
   <!-- FRONTEND ONLY BLOCK -->
   <!-- <notheme css:if-not-content=".section-inicio" /> -->
 
