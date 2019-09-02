@@ -42,10 +42,19 @@ body {
 
 }
 
-.site-nav-search ul {
+ul.nav-searchbox-ul{
     justify-content: flex-end;
     display: flex;
 }
+
+
+#LSResult{
+    z-index: 1 !important;
+    margin-top: 0px !important;
+    margin-left: 2px !important;
+    right: auto !important;
+}
+
 
 .sesionimg {
     align-self: center;
@@ -257,6 +266,8 @@ body {
         max-height: inherit;
     }*/
 }
+
+
 
 /*.enhanced .nav-primary ul {
     list-style-type: none;
