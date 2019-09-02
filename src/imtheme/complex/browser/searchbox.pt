@@ -81,7 +81,7 @@
 
 
     <nav class="site-nav-search">
-      <ul>
+      <ul class="nav-searchbox-ul">
         <li>
           <div id="portal-searchboxx"
          i18n:domain="plone"
@@ -150,8 +150,8 @@
           </tal:block>
 
           <tal:block condition="not: view/is_anonymous">
-            <a tal:define="userinfo view/user_name_home"
-               tal:attributes="href userinfo/homelink">
+            <a tal:define="userinfo view/user_name_logout"
+               tal:attributes="href userinfo/logoutlink">
               <b class="logintext" tal:content="userinfo/name">John</b>
               <img src="++resource++imtheme.complex/images/usuario.png" align="right" />
             </a>
