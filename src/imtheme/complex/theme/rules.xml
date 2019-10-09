@@ -39,8 +39,9 @@
   <replace css:theme=".submenu" css:content=".logos-home" method="raw"/>
 
  <!-- move roler -->
+  <replace css:theme="#slider" css:content=".slideshow-header-container" method="raw" css:if-content=".section-inicio"/>
+  <drop css:theme="#slider-wrapper" css:if-not-content=".section-inicio"/>
 
-  <replace css:theme="#slider" css:content=".slideshow-header-container" method="raw"/>
 
   <!-- Central column -->
   <replace css:theme-children="#main-container" css:content-children="#portal-columns" />
