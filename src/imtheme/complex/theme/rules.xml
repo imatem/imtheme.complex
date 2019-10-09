@@ -25,6 +25,7 @@
     <after css:theme-children="head" css:content="head style" />
     <!-- Script -->
     <after css:theme-children="head" css:content="head script" />
+    <merge attributes="class" css:theme="body" css:content="body" />
   </rules>
 
   <!-- move user bar -->
@@ -38,7 +39,9 @@
   <replace css:theme=".submenu" css:content=".logos-home" method="raw"/>
 
  <!-- move roler -->
-  <replace css:theme="#slider" css:content=".slideshow-header-container" method="raw"/>
+  <replace css:theme="#slider" css:content=".slideshow-header-container" method="raw" css:if-content=".section-inicio"/>
+  <drop css:theme="#slider-wrapper" css:if-not-content=".section-inicio"/>
+
 
   <!-- Central column -->
   <replace css:theme-children="#main-container" css:content-children="#portal-columns" />
