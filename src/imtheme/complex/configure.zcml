@@ -51,5 +51,10 @@
       name="complex"
       />
 
+  <plone:static
+      directory="themeblue"
+      type="theme"
+      name="imblue"
+  />
 
 </configure>
