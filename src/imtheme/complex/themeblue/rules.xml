@@ -5,6 +5,10 @@
        xmlns:xi="http://www.w3.org/2001/XInclude">
 
     <!-- HOME -->
-    <theme href="index.html" css:if-content=".section-inicio" />
+    <rules css:if-content=".section-inicio">
+        <theme href="index.html" css:if-content=".section-inicio" />
+        <!-- move roler -->
+        <replace css:theme="#slider" css:content=".slideshow-header-container" method="raw" />
+    </rules>
 
 </rules>

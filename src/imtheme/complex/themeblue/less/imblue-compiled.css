@@ -37,39 +37,39 @@ body {
 }
 
 .sede-cu {
-    background-image: url("../images/unidades/CU.jpg");
+    background-image: url("../images/unidades/CU-b.jpg");
     border-bottom: 16px solid #b6b4c4;
 }
 
 .sede-cu:hover {
-    background-image: url("../images/unidades/CU-b.jpg");
+    background-image: url("../images/unidades/CU.jpg");
 }
 
 .sede-cuernavaca {
-    background-image: url("../images/unidades/Cuernavaca.jpg");
+    background-image: url("../images/unidades/Cuernavaca-b.jpg");
     border-bottom: 16px solid #724b59;
 }
 
 .sede-cuernavaca:hover {
-    background-image: url("../images/unidades/Cuernavaca-b.jpg");
+    background-image: url("../images/unidades/Cuernavaca.jpg");
 }
 
 .sede-juriquilla {
-    background-image: url("../images/unidades/Juriquilla.jpg");
+    background-image: url("../images/unidades/Juriquilla-b.jpg");
     border-bottom: 16px solid #1d90c2;
 }
 
 .sede-juriquilla:hover {
-    background-image: url("../images/unidades/Juriquilla-b.jpg");
+    background-image: url("../images/unidades/Juriquilla.jpg");
 }
 
 .sede-oaxaca {
-    background-image: url("../images/unidades/Oaxaca.jpg");
+    background-image: url("../images/unidades/Oaxaca-b.jpg");
     border-bottom: 16px solid #cb8554;
 }
 
 .sede-oaxaca:hover {
-    background-image: url("../images/unidades/Oaxaca-b.jpg");
+    background-image: url("../images/unidades/Oaxaca.jpg");
 }
 
 .sede-title {
