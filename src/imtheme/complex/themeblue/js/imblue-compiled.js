@@ -47,3 +47,47 @@ function showSlides2(n) {
   dots[slideIndex-1].className += " active";
 }
 
+
+/* For the tobleron */
+$('#sb-slider').slicebox();
+$(function() {
+  var Page = (function() {
+    var $navArrows = $( '#nav-arrows' ).hide(),
+      $shadow = $( '#shadow' ).hide(),
+      slicebox = $( '#sb-slider' ).slicebox( {
+        onReady : function() {
+          $navArrows.show();
+          $shadow.show();
+        },
+        orientation : 'v',
+        cuboidsRandom : false,
+        cuboidsCount: 1,
+        autoplay : true,
+        speed : 600,
+        interval: 5000,
+        colorHiddenSides : '#222',
+        //fallbackFadeSpeed : 300,
+        //easing : 'ease',
+      } ),
+
+      init = function() {
+        initEvents();
+
+      },
+      initEvents = function() {
+        // add navigation events
+        $navArrows.children( ':first' ).on( 'click', function() {
+          slicebox.next();
+          return false;
+        } );
+        $navArrows.children( ':last' ).on( 'click', function() {
+
+          slicebox.previous();
+          return false;
+        } );
+      };
+      return { init : init };
+  })();
+  Page.init();
+});
+
