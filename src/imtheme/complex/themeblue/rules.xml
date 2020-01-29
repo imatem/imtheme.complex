@@ -9,6 +9,8 @@
         <theme href="index.html" css:if-content=".section-inicio" />
         <!-- move roler -->
         <replace css:theme="#slider" css:content=".slideshow-header-container" method="raw" />
+        <!-- move toblerone -->
+        <replace css:theme="#toblerone" css:content="#sb-slider" method="raw" />
     </rules>
 
 </rules>

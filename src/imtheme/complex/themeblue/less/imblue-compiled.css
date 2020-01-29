@@ -8,9 +8,9 @@ body {
 
 .top-wrapper {
     display:  grid;
+    grid-template-columns: 200px fit-content(1200px) 100px;
     background-color: #B4CBE5;
     height: 58px;
-    grid-template-columns: 200px fit-content(1200px) 100px;
 }
 
 .container-xl {
@@ -19,6 +19,7 @@ body {
     margin-left: auto;
 }
 
+/* Sedes */
 .sedes-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -74,7 +75,6 @@ body {
 
 .sede-title {
     font-size: 1.5em;
-    /* padding-top: 18px; */
     font-weight: bold;
 }
 
@@ -92,7 +92,6 @@ body {
     color: #f4b31a;
 }
 
-
 .sede-calendar {
     background-image: url("../images/icons-svgs/calendar-alt-regular.svg");
     background-repeat: no-repeat;
@@ -100,6 +99,16 @@ body {
     padding-left: 30px;  /* width of the image plus a little extra padding */
     display: block;  /* may not need this, but I've found I do */
 }
+
+/* Main */
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr;
+    grid-column-gap: 148.5px;
+    column-gap: 148.5px;
+    justify-content: center;
+}
+
 
 @media (max-width: 768px) {
     .sedes-wrapper {
