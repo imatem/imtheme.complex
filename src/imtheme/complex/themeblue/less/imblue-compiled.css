@@ -269,3 +269,36 @@ body {
     -ms-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
+
+/*For menu*/
+ul.supermenu {
+    list-style-type: none;
+    margin: 28px 0 0 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dddddd;
+    height: 43px;
+}
+
+ul.supermenu li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+ul.supermenu li a {
+  display: block;
+  padding: 8px;
+  text-align: center;
+}
+
+ul.supermenu li a:hover:not(.active) {
+  background-color: #2c4e78;
+}
+
+ul.supermenu li a .active {
+  background-color: #4CAF50;
+}
+
+ul.supermenu li:last-child {
+  border-right: none;
+}
