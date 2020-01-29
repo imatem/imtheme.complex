@@ -11,6 +11,7 @@
         <replace css:theme="#slider" css:content=".slideshow-header-container" method="raw" />
         <!-- move toblerone -->
         <replace css:theme="#toblerone" css:content="#sb-slider" method="raw" />
+        <replace css:theme="#rotated" css:content="#rotated" method="raw" />
     </rules>
 
 </rules>

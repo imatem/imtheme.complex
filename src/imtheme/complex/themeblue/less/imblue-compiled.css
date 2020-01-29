@@ -302,3 +302,17 @@ ul.supermenu li a .active {
 ul.supermenu li:last-child {
   border-right: none;
 }
+
+/*For rotated news */
+#rotatednews{
+    height: 296px;
+}
+ul.ulrotated {
+    list-style-type: none;
+    height: 230px;
+    overflow-y: hidden;
+  }
+
+li.lirotated div.documentByLine{
+    display: none;
+}
