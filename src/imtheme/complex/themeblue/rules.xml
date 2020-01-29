@@ -11,6 +11,10 @@
         <replace css:theme="#slider" css:content=".slideshow-header-container" method="raw" />
         <!-- move toblerone -->
         <replace css:theme="#toblerone" css:content="#sb-slider" method="raw" />
+        <!-- <replace css:theme="column1-container" css:content-children="collage_view_im_move_news_standard" /> -->
+<!-- collage_view_im_move_news_standard -->
+<!-- collage_view_im_news_standard --> 
+<!-- collage_view_collection_im_without_sumary -->
     </rules>
 
 </rules>
