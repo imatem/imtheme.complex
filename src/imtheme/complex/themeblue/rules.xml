@@ -15,6 +15,7 @@
 <!-- collage_view_im_move_news_standard -->
 <!-- collage_view_im_news_standard --> 
 <!-- collage_view_collection_im_without_sumary -->
+        <replace css:theme="#rotated" css:content="#rotated" method="raw" />
     </rules>
 
 </rules>
