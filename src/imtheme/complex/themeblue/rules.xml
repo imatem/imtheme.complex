@@ -8,7 +8,7 @@
     <rules css:if-content=".section-inicio">
         <theme href="index.html" css:if-content=".section-inicio" />
         <!-- move roler -->
-        <replace css:theme="#slider" css:content=".slideshow-header-container" method="raw" />
+        <replace css:theme-children="#slider-wrapper" css:content-children=".slideshow-header-container" />
         <!-- move toblerone -->
         <replace css:theme="#toblerone" css:content="#sb-slider" method="raw" />
         <!-- <replace css:theme="column1-container" css:content-children="collage_view_im_move_news_standard" /> -->
