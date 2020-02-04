@@ -21,7 +21,8 @@ header {
 /* Social media */
 .social-media,
 .sedes-wrapper,
-.navigation {
+.navigation,
+.main-wrapper {
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -220,6 +221,12 @@ nav ul.supermenu.responsive li a {
     margin-bottom: auto;
     margin-left: auto;
     opacity: 1;
+}
+
+
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 2fr;
 }
 
 @media (min-width: 660px) {
