@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es" xmlns:xlink="http://www.w3.org/1999/xlink">
+
 <head>
   <meta charset="utf-8">
   <title>Instituto de Matemáticas, UNAM</title>
@@ -7,71 +8,72 @@
   <meta name="description" content="Instituto de Matemáticas, UNAM">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=2" />
   <link rel="stylesheet" href="less/imblue-compiled.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- <script src="js/modernizr.js"></script> -->
   <script src="js/jquery.slicebox.min.js"></script>
+  <script src="js/menu.js"></script>
   <script src="js/imblue-compiled.js" defer="defer"></script>
 </head>
 
 <body>
+  <header id="main-header" class="main-header">
 
-  <!-- <svg width="0" height="0" class="hide">
-    <defs>
-        <g id="icon-envelop">
-            <path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path>
-        </g>
+    <div class="top-wrapper">
+      <div class="social-media container-xl">
+        <a href="http://localhost:8080/infomatem/servicios/correo-interno">
+          <img width="30" height="30" src="images/icons-svgs/envelope-regular.svg" alt="Correo Interno">
+        </a><samp class="top-text-xl">Correo interno</samp>
+        <a href=""><img width="33" height="30" src="images/icons-svgs/youtube-brands.svg" alt="IM en Yotube"></a>
+        <a href="https://www.instagram.com/imate.unam/" target="_blank">
+          <img width="26" height="30" src="images/icons-svgs/instagram-brands.svg" alt="Instagram IM">
+        </a>
+        <a href="https://www.facebook.com/imateunam/" target="_blank">
+          <img width="26" height="30" src="images/icons-svgs/facebook-square-brands.svg" alt="Facebook IM">
+        </a>
+        <a href="https://twitter.com/imate_unam" target="_blank">
+          <img width="26" height="30" src="images/icons-svgs/twitter-square-brands.svg" alt="Twitter IM">
+        </a>
 
-        <g id="icon-twitter">
-            <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"></path>
-        </g>
-    </defs>
-  </svg> -->
-
-  <div class="header-wrapper">
-
-    <header id="main-header" class="main-header">
-
-      <div class="top-wrapper">
-        <div>Correo interno</div>
-        <!-- <svg class="icon icon-twitter" viewBox="0 0 100 100">
-          <title>@imate_unam on Twitter</title>
-          <use xlink:href="#icon-twitter" />
-        </svg> -->
-      </div>
-
-      <div id="navigation-wrapper" class="container-xl">
-        <nav class="nav">
-          <ul id="menu" class="supermenu">
-            <li><a href="about/">Acerca del IM</a></li>
-            <li><a href="">Investigación</a></li>
-            <li><a href="">Comunidad</a></li>
-            <li><a href="">Convenios colaboración</a></li>
-            <li><a href="">Organización interna</a></li>
-            <li><a href="">Oferta académica</a></li>
-            <li><a href="">Docencia</a></li>
-            <li><a href="">Divulgación</a></li>
-            <li><a href="">Vinculación</a></li>
-            <li><a href="">Servicios</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div id="submenu-wrapper">
-        <div class="submenu header-center">
-          logos y opciones
+        <div class="session">
+          <img class="top-text-xl" width="30" src="images/icons-svgs/search-solid.svg" alt="búsqueda">
+          <samp class="top-text-xl">Entrar</samp>
+          <img width="30" src="images/icons-svgs/sign-in-alt-solid.svg" alt="Login">
         </div>
       </div>
+    </div>
 
-      <div id="slider-wrapper" class="container-xl">
-        <div class="mySlides fade" style="display: block;">
-          <a>
-            <img style="width:100%" src="images/imbanner.jpg">
-          </a>
-        </div>
+    <div id="navigation-wrapper" class="container-xl">
+      <nav class="nav">
+        <ul id="menu" class="supermenu">
+          <li><a href="about/">Acerca del IM</a></li>
+          <li><a href="">Investigación</a></li>
+          <li><a href="">Comunidad</a></li>
+          <li><a href="">Activides académicas</a></li>
+          <li><a href="">Seminarios</a></li>
+          <li></li>
+          <li><a href="">Bibliotecas</a></li>
+          <li><a href="">servicios internos</a></li>
+          <li><a href="">Igualdad</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- <div id="submenu-wrapper">
+      <div class="submenu header-center">
+        logos y opciones
       </div>
-    </header>
+    </div> -->
 
-  </div>
+    <div id="slider-wrapper" class="container-xl">
+      <div class="mySlides fade" style="display: block;">
+        <a>
+          <img style="width:100%" src="images/imbanner.jpg">
+        </a>
+      </div>
+    </div>
+  </header>
+
 
   <div id="main-container" class="container-xl">
     <div class="sedes-wrapper">
@@ -96,7 +98,7 @@
       </div>
     </div>
     <main class="main-wrapper">
-      <div class="column1-container">
+      <!-- <div class="column1-container">
         <div id="rotatednews">
           Noticias
           <ul id="rotated">
@@ -105,10 +107,9 @@
         </div>
         <div id="notices">Avisos</div>
         <div id="exchanges">Intercambio Académico</div>
-      </div>
+      </div> -->
 
-
-      <div class="content-container">
+      <!-- <div class="content-container">
         <div>
           <h1>ESCUELAS Y TALLERES PARA ESTUDIANTES</h1>
           <img src="images/botones/Escuelas-b.jpg">
@@ -118,17 +119,14 @@
         <img src="images/botones/Docencia-b.jpg">
         <img src="images/botones/Vinculacion-b.jpg">
         <img src="images/botones/Becas-b.jpg">
-      </div>
-      <div class="column2-container">Main content</div>
+      </div> -->
+      <!-- <div class="column2-container">Main content</div> -->
     </main>
     <footer class="">
 
     </footer>
 
   </div>
-
-
-
-
 </body>
+
 </html>
