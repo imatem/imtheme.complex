@@ -75,6 +75,33 @@ nav ul.supermenu.responsive li a {
     display: block;
 }
 
+/* Logos */
+.submenu {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 50%;
+}
+
+.logo-unam {
+    max-width: 25%;
+}
+
+.logo-im {
+    max-width: 50%;
+}
+
+.submenu-accions {
+    float: right;
+    max-width: 40%;
+}
+
+.submenu-accions ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
 /* Sedes */
 .sedes-wrapper {
     display: grid;
@@ -200,6 +227,14 @@ nav ul.supermenu.responsive li a {
         margin-right: 10px;
     }
 
+    .submenu {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .logo-unam {
+        padding-right: 20px;
+    } 
     /* .sedes-wrapper {
         grid-template-columns: 297px 297px;
     } */
@@ -240,8 +275,17 @@ nav ul.supermenu.responsive li a {
         color: rgb(239, 246, 247);
         background-color: rgb(185, 36, 44);
     }
-}
 
+    /* Main */
+    .main-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 5fr 2fr;
+        grid-column-gap: 148.5px;
+        column-gap: 148.5px;
+        justify-content: center;
+    }
+
+}
 
 @media (min-width: 1200px) {
     .container-xl {
@@ -254,4 +298,116 @@ nav ul.supermenu.responsive li a {
         font-weight: bold;
         font-size: 1.5em;
     }
+}
+
+/* Slicebox Style */
+.sb-slider {
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 144px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.sb-slider li {
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.sb-slider li > a {
+    outline: none;
+}
+
+.sb-slider li > a img {
+    border: none;
+}
+
+.sb-slider img {
+    max-width: 100%;
+    display: block;
+}
+
+.sb-description {
+    padding: 20px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    z-index: 1000;
+    position: absolute;
+    background: #CBBFAE;
+    background: rgba(190,176,155, 0.4);
+    border-left: 4px solid rgba(255,255,255,0.7);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    color: #fff;
+
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -o-transition: all 200ms;
+    -ms-transition: all 200ms;
+    transition: all 200ms;
+}
+
+.sb-slider li.sb-current .sb-description {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    opacity: 1;
+}
+
+.sb-slider li.sb-current .sb-description:hover {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
+    filter: alpha(opacity=99);
+    background: rgba(190,176,155, 0.7);
+}
+
+.sb-perspective {
+    position: relative;
+}
+
+.sb-perspective > div {
+    position: absolute;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    -webkit-backface-visibility : hidden;
+    -moz-backface-visibility : hidden;
+    -o-backface-visibility : hidden;
+    -ms-backface-visibility : hidden;
+    backface-visibility : hidden;
+}
+
+.sb-side {
+    margin: 0;
+    display: block;
+    position: absolute;
+
+    -moz-backface-visibility : hidden;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+/*For rotated news */
+#rotatednews{
+    height: 296px;
+}
+ul.ulrotated {
+    list-style-type: none;
+    height: 230px;
+    overflow-y: hidden;
+  }
+
+li.lirotated div.documentByLine{
+    display: none;
 }
