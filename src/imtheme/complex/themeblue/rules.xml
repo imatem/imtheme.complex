@@ -7,6 +7,8 @@
     <!-- HOME -->
     <rules css:if-content=".section-inicio">
         <theme href="index.html" css:if-content=".section-inicio" />
+        <replace css:theme-children="#my-topnav" css:content-children="#portal-globalnav" />
+        <drop css:content=".globalSectionsLevel1" />
         <!-- move roler -->
         <replace css:theme-children="#slider-wrapper" css:content-children=".slideshow-header-container" />
         <!-- move toblerone -->
