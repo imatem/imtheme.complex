@@ -118,6 +118,20 @@ nav ul.supermenu li:nth-last-child(3){
     justify-content: center;
 }
 
+.sede-calendar{
+    background: url('../images/icons-svgs/calendar-alt-regular.svg');
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+.sede-calendar:hover{
+    background: url('../images/icons-svgs/calendar-alt-regular-b.svg');
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+
+
 .sede-img {
     color: white;
     height: 136px;
