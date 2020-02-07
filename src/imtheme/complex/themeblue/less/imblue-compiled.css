@@ -76,6 +76,10 @@ nav ul.supermenu.responsive li a {
     display: block;
 }
 
+nav ul.supermenu li:nth-last-child(3){
+    margin-left: 3em;
+}
+
 /* Logos */
 .submenu {
     margin-top: 25px;
@@ -187,17 +191,17 @@ nav ul.supermenu.responsive li a {
     animation-name: fade;
     animation-duration: 1.5s;
 }
-  
+
 @-webkit-keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
 }
-  
+
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
 }
-  
+
 /* The dots/bullets/indicators */
 .dot {
     height: 15px;
@@ -241,7 +245,7 @@ nav ul.supermenu.responsive li a {
 
     .logo-unam {
         padding-right: 20px;
-    } 
+    }
     /* .sedes-wrapper {
         grid-template-columns: 297px 297px;
     } */
@@ -273,7 +277,11 @@ nav ul.supermenu.responsive li a {
         padding: .5em 1em;
         border-right: 1px solid #b4cbe5;
     }
-    
+
+    ul#my-topnav li:nth-last-child(4) a {
+        border-right: none;
+    }
+
     ul#my-topnav li:last-child a {
         border-right: none;
     }
@@ -418,3 +426,5 @@ ul.ulrotated {
 li.lirotated div.documentByLine{
     display: none;
 }
+
+
