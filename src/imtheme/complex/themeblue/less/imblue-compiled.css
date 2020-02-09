@@ -430,11 +430,14 @@ nav ul.supermenu li:nth-last-child(3){
 /*For rotated news */
 #rotatednews{
     height: 296px;
+    max-height: 296px;
 }
 ul.ulrotated {
     list-style-type: none;
-    height: 230px;
+    height: 220px;
     overflow-y: hidden;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
   }
 
 li.lirotated div.documentByLine{
@@ -455,9 +458,27 @@ div.collection_im_without_summary div.documentByLine{
 
 .standard-topic:nth-last-of-type(odd) {
   background-color: #ffffff;
+  padding-bottom: : 20px;
 }
 
 .standard-topic:nth-last-of-type(even) {
   background-color: rgb(239, 246, 247);
+  margin-bottom: 20px;
 }
 
+#rotatednews h2{
+    border-left: 8px solid #B4CBE5;
+    padding-left: 0.3em;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.news_imstandard h2{
+    border-left: 8px solid #B4CBE5;
+    padding-left: 0.3em;
+}
+
+.collection_im_without_summary h2{
+    border-left: 8px solid #B4CBE5;
+    padding-left: 0.3em;
+}
