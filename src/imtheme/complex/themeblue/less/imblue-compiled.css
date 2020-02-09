@@ -441,4 +441,23 @@ li.lirotated div.documentByLine{
     display: none;
 }
 
+div.news_imstandard div.documentByLine{
+    display: none;
+}
+
+div.news_imstandard .description{
+    display: none;
+}
+
+div.collection_im_without_summary div.documentByLine{
+    display: none;
+}
+
+.standard-topic:nth-last-of-type(odd) {
+  background-color: #ffffff;
+}
+
+.standard-topic:nth-last-of-type(even) {
+  background-color: rgb(239, 246, 247);
+}
 

@@ -15,9 +15,11 @@
         <replace css:theme="#toblerone" css:content="#sb-slider" method="raw" />
         <!-- <replace css:theme="column1-container" css:content-children="collage_view_im_move_news_standard" /> -->
 <!-- collage_view_im_move_news_standard -->
-<!-- collage_view_im_news_standard --> 
+<!-- collage_view_im_news_standard -->
 <!-- collage_view_collection_im_without_sumary -->
         <replace css:theme="#rotated" css:content="#rotated" method="raw" />
+        <replace css:theme="#notices" css:content=".news_imstandard" method="raw" />
+        <replace css:theme="#exchanges" css:content=".collection_im_without_summary" method="raw" />
     </rules>
 
 </rules>
