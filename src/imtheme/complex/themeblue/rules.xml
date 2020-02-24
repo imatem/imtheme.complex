@@ -22,4 +22,7 @@
         <replace css:theme="#exchanges" css:content=".collection_im_without_summary" method="raw" />
     </rules>
 
+    <replace css:theme-children="#portal-footer" css:content-children="#portal-footer" />
+    <!-- <replace css:theme-children="#siteactions-wrapper" css:content="#portal-siteactions" /> -->
+
 </rules>
