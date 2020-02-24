@@ -154,9 +154,9 @@ nav ul.supermenu li:nth-last-child(3){
     border-bottom: 16px solid #b6b4c4;
 }
 
-.sede-cu:hover {
+/* .sede-cu:hover {
     background-image: url("../images/unidades/CU.jpg");
-}
+} */
 
 .sede-cuernavaca {
     background-image: url("../images/unidades/Cuernavaca-b.jpg");
@@ -164,9 +164,9 @@ nav ul.supermenu li:nth-last-child(3){
     border-bottom: 16px solid #724b59;
 }
 
-.sede-cuernavaca:hover {
+/* .sede-cuernavaca:hover {
     background-image: url("../images/unidades/Cuernavaca.jpg");
-}
+} */
 
 .sede-juriquilla {
     background-image: url("../images/unidades/Juriquilla-b.jpg");
@@ -174,9 +174,9 @@ nav ul.supermenu li:nth-last-child(3){
     border-bottom: 16px solid #1d90c2;
 }
 
-.sede-juriquilla:hover {
+/* .sede-juriquilla:hover {
     background-image: url("../images/unidades/Juriquilla.jpg");
-}
+} */
 
 .sede-oaxaca {
     background-image: url("../images/unidades/Oaxaca-b.jpg");
@@ -184,9 +184,9 @@ nav ul.supermenu li:nth-last-child(3){
     border-bottom: 16px solid #cb8554;
 }
 
-.sede-oaxaca:hover {
+/* .sede-oaxaca:hover {
     background-image: url("../images/unidades/Oaxaca.jpg");
-}
+} */
 
 .sede-title {
     font-size: 1.5em;
@@ -196,6 +196,7 @@ nav ul.supermenu li:nth-last-child(3){
 .sede-img > div {
     text-align: center;
     padding-top: 18px;
+    text-shadow: 2px 2px 5px black;
 }
 
 .sede-img a:link, .sede-img a:visited  {
@@ -266,7 +267,7 @@ nav ul.supermenu li:nth-last-child(3){
 
 @media (min-width: 660px) {
     .social-media img {
-        margin-right: 10px;
+        margin-right: 5px;
     }
 
     .submenu {
@@ -280,9 +281,9 @@ nav ul.supermenu li:nth-last-child(3){
 }
 
 @media (min-width: 768px) {
-    header {
+    /* header {
         margin-bottom: 30px;
-    }
+    } */
 
     .sedes-wrapper {
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -301,7 +302,7 @@ nav ul.supermenu li:nth-last-child(3){
 
     nav ul.supermenu li a {
         display: block;
-        margin-top: 10px;
+        margin-top: 15px;
         padding: .5em 1em;
         border-right: 1px solid #b4cbe5;
     }
@@ -317,6 +318,24 @@ nav ul.supermenu li:nth-last-child(3){
     ul#my-topnav li:nth-last-child(-n+3) a:hover {
         color: rgb(239, 246, 247);
         background-color: rgb(185, 36, 44);
+    }
+
+    .unidades-h2 {
+        display:none
+    }
+    .unidades-h img{
+        display:block;
+    }
+    .unidades-h{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        color:  #2C4E78;
+        font-weight: bold;
+        margin-left: 300px;
+    }
+    .unidades-h span{
+        margin-bottom: 25px;
     }
 
     /* Main */
@@ -364,6 +383,11 @@ nav ul.supermenu li:nth-last-child(3){
 
     .column-logos {
         grid-area: c;
+    }
+
+    .column-logos img{
+        width: 60%;
+        justify-self: center;
     }
 
     .sevicios-container {
@@ -507,9 +531,7 @@ div.collection_im_without_summary div.documentByLine{
 
 .standard-topic {
     margin-top: 20px;
-    margin-right: 10px;
     margin-bottom: 20px;
-    margin-left: 10px;
     color: #2c4E78;
 }
 
@@ -521,10 +543,17 @@ div.collection_im_without_summary div.documentByLine{
 .standard-topic h2{
     border-left: 8px solid #B4CBE5;
     padding-left: 0.3em;
-    margin-bottom: 0px;
+    margin: 0px;
     padding-bottom: 0px;
     color: #2C4E78;
     font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.avisos{
+    height: 5px;
+    margin: 0px;
+    padding: 0px;
 }
 
 #rotatednews ul {
@@ -548,6 +577,7 @@ div.collection_im_without_summary div.documentByLine{
 #notices h3 a{
     text-decoration: none;
     color: #2C4E78;
+    font-size: 17px;
 }
 
 #notices {
@@ -556,7 +586,9 @@ div.collection_im_without_summary div.documentByLine{
 
 .content-container h1{
     color: #2C4E78;
-    font-size: 22px;
+    font-size: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: right;
 }
 
 .content-container img {
