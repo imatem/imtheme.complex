@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background: rgb(239, 246, 247);
     margin: 0;
     padding: 0;
@@ -8,7 +8,6 @@ body {
 .top-wrapper {
     background-color: #B4CBE5;
     color: #2c4e78;
-    font-size: 14px;
 }
 
 .container-xl {
@@ -63,7 +62,8 @@ nav ul.supermenu li a {
     display: none;
     color: #2c4e78;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
+    font-family: Arial;
 }
 
 nav ul.supermenu li a:hover{
@@ -106,6 +106,19 @@ nav ul.supermenu li:nth-last-child(3){
 }
 
 /* Sedes */
+.unidades-h img{
+    display:none;
+}
+.unidades-h{
+    display:none;
+}
+.unidades-h2 {
+    display: flex;
+    justify-content: center;
+    color:  #2C4E78;
+    font-weight: bold;
+    font-size: 15px;
+}
 .sedes-wrapper {
     display: grid;
     grid-template-columns: 297px;
@@ -325,6 +338,16 @@ nav ul.supermenu li:nth-last-child(3){
     .top-text-xl {
         display: initial;
         font-weight: bold;
+        font-size: 1em;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .correo-interno {
+        margin-right: 10px;
+    }
+
+    .entrar {
+        margin-left:15px;
     }
 
     .main-wrapper {
