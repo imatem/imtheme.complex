@@ -109,14 +109,15 @@ nav ul.supermenu li:nth-last-child(3){
 .unidades-h img{
     display:none;
 }
+
 .unidades-h{
     display:none;
 }
+
 .unidades-h2 {
     display: flex;
     justify-content: center;
     color:  #2C4E78;
-    font-weight: bold;
     font-size: 15px;
 }
 .sedes-wrapper {
@@ -149,7 +150,8 @@ nav ul.supermenu li:nth-last-child(3){
 }
 
 .sede-cu {
-    background-image: url("../images/unidades/CU-b.jpg");
+    /* background-image: url("../images/unidades/CU-b.jpg"); */
+    background-color: #b6b4c4;
     border-bottom-style: solid;
     border-bottom: 16px solid #b6b4c4;
 }
@@ -159,7 +161,8 @@ nav ul.supermenu li:nth-last-child(3){
 } */
 
 .sede-cuernavaca {
-    background-image: url("../images/unidades/Cuernavaca-b.jpg");
+    /* background-image: url("../images/unidades/Cuernavaca-b.jpg"); */
+    background-color: #724b59;
     border-bottom-style: solid;
     border-bottom: 16px solid #724b59;
 }
@@ -169,7 +172,8 @@ nav ul.supermenu li:nth-last-child(3){
 } */
 
 .sede-juriquilla {
-    background-image: url("../images/unidades/Juriquilla-b.jpg");
+    /* background-image: url("../images/unidades/Juriquilla-b.jpg"); */
+    background-color: #1d90c2;
     border-bottom-style: solid;
     border-bottom: 16px solid #1d90c2;
 }
@@ -179,7 +183,8 @@ nav ul.supermenu li:nth-last-child(3){
 } */
 
 .sede-oaxaca {
-    background-image: url("../images/unidades/Oaxaca-b.jpg");
+    /* background-image: url("../images/unidades/Oaxaca-b.jpg"); */
+    background-color: #cb8554;
     border-bottom-style: solid;
     border-bottom: 16px solid #cb8554;
 }
@@ -190,7 +195,6 @@ nav ul.supermenu li:nth-last-child(3){
 
 .sede-title {
     font-size: 1.5em;
-    font-weight: bold;
 }
 
 .sede-img > div {
@@ -331,7 +335,6 @@ nav ul.supermenu li:nth-last-child(3){
         align-items: center;
         justify-content: center;
         color:  #2C4E78;
-        font-weight: bold;
         margin-left: 300px;
     }
     .unidades-h span{
@@ -356,7 +359,6 @@ nav ul.supermenu li:nth-last-child(3){
 
     .top-text-xl {
         display: initial;
-        font-weight: bold;
         font-size: 1em;
         font-family: 'Open Sans', sans-serif;
     }
@@ -367,6 +369,7 @@ nav ul.supermenu li:nth-last-child(3){
 
     .entrar {
         margin-left:15px;
+        font-weight: bold;
     }
 
     .main-wrapper {
@@ -589,10 +592,12 @@ div.collection_im_without_summary div.documentByLine{
     font-size: 30px;
     font-family: 'Open Sans Condensed', sans-serif;
     text-align: right;
+    margin-top: 0;
 }
 
 .content-container img {
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .sevicios-container ul {
@@ -606,7 +611,6 @@ div.collection_im_without_summary div.documentByLine{
 .sevicios-container li a {
     text-decoration: none;
     color: #2C4E78;
-    font-weight: bold;
 }
 
 footer {
@@ -615,6 +619,10 @@ footer {
     color: #2c4e78;
     font-size: 14px;
     font-family: Arial;
+}
+
+.footer-center {
+    text-align: center;
 }
 
 .tileHeadline {
@@ -644,4 +652,17 @@ footer {
 
 .news_imstandard {
     padding-top: 10px;
+}
+
+.docencia {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+
+.bottom-right {
+    position: absolute;
+    bottom: 20px;
+    right: 16px;
 }
