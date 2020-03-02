@@ -403,6 +403,10 @@ nav ul.supermenu li:nth-last-child(3){
     .column1-container {
         grid-area: a;
     }
+
+    .news_imstandard {
+        padding-left: 10px;
+    }
 }
 
 /* Slicebox Style */
