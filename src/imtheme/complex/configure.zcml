@@ -29,6 +29,15 @@
 
       />
 
+  <genericsetup:registerProfile
+      name="imblue"
+      title="imtheme.complex (imblue)"
+      directory="profiles/imblue"
+      description="Installs the imtheme.complex imblue add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+
   <!-- post_handler=".setuphandlers.uninstall" -->
   <genericsetup:registerProfile
       name="uninstall"
