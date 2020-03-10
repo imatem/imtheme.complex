@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<object>
+  <order manager="plone.portalheader" skinname="Sunburst Theme">
+    <!-- <viewlet name="plone.searchbox"  insert-before="*" /> -->
+    <!-- <viewlet name="plone.global_sections" insert-after="plone.searchbox" /> -->
+    <viewlet name="logos-viewlet" insert-after="plone.logo" />
+    <!-- <viewlet name="activities-viewlet" insert-after="logos-viewlet" /> -->
+  </order>
+
+  <hidden manager="plone.portalheader" skinname="Sunburst Theme">
+    <viewlet name="plone.app.i18n.locales.languageselector" />
+    <viewlet name="collective.lineage.switcher" />
+  </hidden>
+
+</object>

@@ -32,9 +32,10 @@
   <genericsetup:registerProfile
       name="imblue"
       title="imtheme.complex (imblue)"
-      directory="profiles/imblue"
+      directory="profiles/blue"
       description="Installs the imtheme.complex imblue add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       />
 
 
