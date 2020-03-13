@@ -441,7 +441,7 @@ nav ul.supermenu li:nth-last-child(3){
 
 .sb-description {
     padding: 20px;
-    bottom: 10px;
+    bottom: 20px;
     left: 10px;
     right: 10px;
     z-index: 1000;
@@ -596,7 +596,8 @@ div.collection_im_without_summary div.documentByLine{
     font-size: 30px;
     font-family: 'Open Sans Condensed', sans-serif;
     text-align: right;
-    margin-top: 0;
+    margin-top: 15px;
+    margin-bottom: 0;
 }
 
 .content-container img {
@@ -669,4 +670,11 @@ footer {
     position: absolute;
     bottom: 20px;
     right: 16px;
+}
+
+#footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-content: center;
+    column-gap: 20px;
 }

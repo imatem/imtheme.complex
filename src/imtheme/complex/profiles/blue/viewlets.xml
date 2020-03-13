@@ -3,8 +3,8 @@
   <order manager="plone.portalheader" skinname="Sunburst Theme">
     <!-- <viewlet name="plone.searchbox"  insert-before="*" /> -->
     <!-- <viewlet name="plone.global_sections" insert-after="plone.searchbox" /> -->
-    <viewlet name="logos-viewlet" insert-after="plone.logo" />
-    <!-- <viewlet name="activities-viewlet" insert-after="logos-viewlet" /> -->
+    <!-- <viewlet name="logos-viewlet" insert-after="*" /> -->
+    <viewlet name="activities-viewlet" insert-after="*" />
   </order>
 
   <hidden manager="plone.portalheader" skinname="Sunburst Theme">
