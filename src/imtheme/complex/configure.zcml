@@ -48,6 +48,14 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <genericsetup:importStep
+      name="blue_post_install"
+      title="imtheme.complex various import handlers"
+      description="Post install import step from imtheme.complex"
+      handler="imtheme.complex.setuphandlers.post_install">
+  </genericsetup:importStep>
+
+
   <utility
       factory=".setuphandlers.HiddenProfiles"
       name="imtheme.complex-hiddenprofiles"
