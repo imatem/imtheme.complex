@@ -2,9 +2,9 @@
    If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
    This text does not appear on pypi or github. It is a comment.
 
-===============
-imtheme.complex
-===============
+======================
+imtheme.complex (blue)
+======================
 
 Tell me what your product does
 
@@ -12,27 +12,6 @@ Features
 --------
 
 - Can be bullet points
-
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
 
 
 Installation
@@ -49,6 +28,14 @@ Install imtheme.complex by adding it to your buildout::
 
 
 and then running ``bin/buildout``
+
+* Desinstalar imtheme.complex
+* Configuración del tema: Desactivar Plone Theme: complex
+* Desinstalar IM responsivetheme
+
+En ZMI -> portal_setup /Import
+* Select Profile imtheme.complex (imblue)
+* Configuración del tema: Activar Plone Theme: imblue
 
 
 Contribute
