@@ -258,6 +258,7 @@ nav ul.supermenu li:nth-last-child(3){
 /* Main */
 .main-wrapper {
     display: grid;
+    margin-top: 30px;
 }
 
 .column-logos {
