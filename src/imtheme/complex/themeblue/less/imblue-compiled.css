@@ -78,31 +78,50 @@ nav ul.supermenu li:nth-last-child(3){
     margin-left: 3em;
 }
 
+#submenu-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
 /* Logos */
 .submenu {
     margin-top: 25px;
     margin-bottom: 25px;
-    width: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .logo-unam {
-    max-width: 25%;
+    max-width: 30%;
 }
 
 .logo-im {
-    max-width: 50%;
+    max-width: 60%;
 }
 
 .submenu-accions {
-    float: right;
-    max-width: 40%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .submenu-accions ul{
     display: flex;
+    float: right;
+    flex-direction: column;
     list-style-type: none;
-    padding: 0px;
-    margin: 0px;
+    justify-content: center;
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+.submenu-accions ul a{
+    color: #2c4e78;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
 }
 
 /* Sedes */
@@ -279,15 +298,16 @@ nav ul.supermenu li:nth-last-child(3){
         margin-right: 10px;
     }
 
-    .logo-unam {
-        padding-right: 20px;
+    .submenu-accions ul{
+        padding-left: 40px;
     }
 }
 
 @media (min-width: 768px) {
-    /* header {
-        margin-bottom: 30px;
-    } */
+
+    .logo-unam {
+        padding-right: 15px;
+    }
 
     .sedes-wrapper {
         grid-template-columns: 1fr 1fr 1fr 1fr;
