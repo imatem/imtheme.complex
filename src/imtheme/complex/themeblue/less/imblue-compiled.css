@@ -169,48 +169,28 @@ nav ul.supermenu li:nth-last-child(3){
 }
 
 .sede-cu {
-    /* background-image: url("../images/unidades/CU-b.jpg"); */
     background-color: #b6b4c4;
     border-bottom-style: solid;
     border-bottom: 16px solid #b6b4c4;
 }
 
-/* .sede-cu:hover {
-    background-image: url("../images/unidades/CU.jpg");
-} */
-
 .sede-cuernavaca {
-    /* background-image: url("../images/unidades/Cuernavaca-b.jpg"); */
     background-color: #724b59;
     border-bottom-style: solid;
     border-bottom: 16px solid #724b59;
 }
 
-/* .sede-cuernavaca:hover {
-    background-image: url("../images/unidades/Cuernavaca.jpg");
-} */
-
 .sede-juriquilla {
-    /* background-image: url("../images/unidades/Juriquilla-b.jpg"); */
     background-color: #1d90c2;
     border-bottom-style: solid;
     border-bottom: 16px solid #1d90c2;
 }
 
-/* .sede-juriquilla:hover {
-    background-image: url("../images/unidades/Juriquilla.jpg");
-} */
-
 .sede-oaxaca {
-    /* background-image: url("../images/unidades/Oaxaca-b.jpg"); */
     background-color: #cb8554;
     border-bottom-style: solid;
     border-bottom: 16px solid #cb8554;
 }
-
-/* .sede-oaxaca:hover {
-    background-image: url("../images/unidades/Oaxaca.jpg");
-} */
 
 .sede-title {
     font-size: 1.5em;
@@ -423,13 +403,6 @@ footer {
     }
 
     /* Main */
-    .main-wrapper {
-        /* grid-template-columns: 2fr 5fr 2fr; */
-        /* grid-column-gap: 148.5px; */
-        /* column-gap: 148.5px; */
-        /* justify-content: center; */
-    }
-
     .sevicios-container li {
         padding-bottom: 20px;
     }
