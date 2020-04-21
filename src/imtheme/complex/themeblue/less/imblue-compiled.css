@@ -462,7 +462,7 @@ footer {
             "a b d"
             "a b d"
             "a b d";
-        column-gap: 148.5px;
+        column-gap: 50px;
         justify-content: center;
     }
 
@@ -594,6 +594,7 @@ footer {
     height: 296px;
     max-height: 296px;
 }
+
 ul.ulrotated {
     list-style-type: none;
     height: 220px;
@@ -673,6 +674,11 @@ div.collection_im_without_summary div.documentByLine{
     padding-left: 10px;
 }
 
+.content-container {
+    max-width: 490px;
+    margin: auto;
+}
+
 .content-container h1{
     color: #2C4E78;
     font-size: 30px;
@@ -681,6 +687,7 @@ div.collection_im_without_summary div.documentByLine{
     margin-top: 15px;
     margin-bottom: 0;
 }
+
 
 .content-container img {
     width: 100%;
