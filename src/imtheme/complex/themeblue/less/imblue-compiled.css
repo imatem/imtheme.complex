@@ -288,6 +288,67 @@ nav ul.supermenu li:nth-last-child(3){
     row-gap: 10px;
 }
 
+
+.sevicios-container ul {
+    list-style: none;
+    padding-left: 5px;
+    margin-bottom: 0px;
+}
+.sevicios-container li {
+    padding-bottom: 12px;
+}
+
+.sevicios-container li:last-child {
+    padding-bottom: 0px;
+}
+
+.sevicios-container li a {
+    text-decoration: none;
+    color: #2C4E78;
+}
+
+
+/* footer */
+footer {
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.empty {
+    display: none;
+}
+
+#footer-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#footer-container ul li{
+    font-size:  12px;
+}
+
+.footer-action ul li {
+    margin-bottom: 17px;
+}
+
+.footer-center ul li:last-child, .footer-phone {
+    margin-top: 17px;
+}
+
+.footer-center ul li:first-child {
+    margin-bottom: 17px;
+}
+
 @media (min-width: 660px) {
     .social-media img {
         margin-right: 5px;
@@ -369,6 +430,34 @@ nav ul.supermenu li:nth-last-child(3){
         /* justify-content: center; */
     }
 
+    .sevicios-container li {
+        padding-bottom: 20px;
+    }
+
+    #footer-container {
+        grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+        column-gap: 20px;
+    }
+
+    .empty {
+        display: inline;
+    }
+
+    #footer-container ul li{
+        font-size:  16px;
+    }
+    
+    .footer-action ul li {
+        margin-bottom: 15px;
+    }
+    
+    .footer-center ul li:last-child, .footer-phone {
+        margin-top: 23px;
+    }
+    
+    .footer-center ul li:first-child {
+        margin-bottom: 23px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -625,19 +714,6 @@ div.collection_im_without_summary div.documentByLine{
     margin-bottom: 20px;
 }
 
-.sevicios-container ul {
-    list-style: none;
-    padding-left: 5px;
-}
-.sevicios-container li {
-    padding-bottom: 20px;
-}
-
-.sevicios-container li a {
-    text-decoration: none;
-    color: #2C4E78;
-}
-
 .tileHeadline {
     border-style: dashed;
     border-top: 0px;
@@ -678,40 +754,4 @@ div.collection_im_without_summary div.documentByLine{
     position: absolute;
     bottom: 20px;
     right: 16px;
-}
-
-footer {
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-}
-
-#footer-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
-    justify-content: center;
-    column-gap: 20px;
-}
-
-#footer-container ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#footer-container ul li{
-    font-size:  16px;
-}
-
-.footer-action ul li {
-    margin-bottom: 15px;
-}
-
-.footer-center ul li:last-child, .footer-phone {
-    margin-top: 23px;
-}
-
-.footer-center ul li:first-child {
-    margin-bottom: 23px;
 }
