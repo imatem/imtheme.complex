@@ -33,12 +33,22 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 .social-media a {
     display: inline-block;
+    text-decoration: none;
 }
 
 .top-text-xl {
     display: none;
+}
+
+.social-media a:visited {
+    color: #2c4E78;
+}
+
+.social-media a:hover {
+    color: #2c786e;
 }
 
 .session {
