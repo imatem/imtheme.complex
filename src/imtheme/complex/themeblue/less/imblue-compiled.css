@@ -273,9 +273,9 @@ nav ul.supermenu li:nth-last-child(3){
 .column-logos {
     display: grid;
     align-self: baseline;
-    justify-self: center;
     margin-top: 20px;
     row-gap: 10px;
+    text-align: center;
 }
 
 
