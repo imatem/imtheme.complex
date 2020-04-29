@@ -339,6 +339,11 @@ footer {
     margin-bottom: 17px;
 }
 
+.footer-center ul li:first-child,
+.footer-center ul li:last-child {
+    font-weight: bold;
+}
+
 @media (min-width: 660px) {
     .social-media img {
         margin-right: 5px;
