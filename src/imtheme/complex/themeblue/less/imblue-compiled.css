@@ -754,3 +754,23 @@ div.collection_im_without_summary div.documentByLine{
     bottom: 20px;
     right: 16px;
 }
+
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 4px solid transparent;
+	border-left: 5px solid #2C4E78;
+    border-bottom: 4px solid transparent;
+    display: inline-block;
+}
+
+#rotatedmore {
+    color: #2C4E78;
+    font-size: .9rem;
+    font-family: helvetica-arial;
+    text-decoration: none;
+}
+
+#rotatedmore:hover {
+    color: #2c786e;
+}
