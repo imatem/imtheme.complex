@@ -7,6 +7,7 @@
     <!-- HOME -->
     <rules css:if-content=".section-inicio">
         <theme href="index.html" css:if-content=".section-inicio" />
+        <!-- <replace css:theme-children=".session" css:content-children=".sesionimg" /> -->
         <replace css:theme-children="#my-topnav" css:content-children="#portal-globalnav" />
         <drop css:content=".globalSectionsLevel1" />
         <replace css:theme-children=".submenu-accions" css:content-children="#portal_actions" />
@@ -21,6 +22,7 @@
         <replace css:theme="#rotated" css:content="#rotated" method="raw" />
         <replace css:theme="#notices" css:content=".news_imstandard" method="raw" />
         <replace css:theme="#exchanges" css:content=".collection_im_without_summary" method="raw" />
+        <replace css:theme="#portal-siteactions" css:content="#portal-siteactions" method="raw" />
     </rules>
 
     <rules css:if-not-content=".section-inicio">
