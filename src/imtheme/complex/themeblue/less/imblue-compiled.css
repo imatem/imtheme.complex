@@ -43,11 +43,13 @@ header {
     display: none;
 }
 
-.social-media a:visited {
+.social-media a:visited,
+.tileHeadline a:visited {
     color: #2c4E78;
 }
 
-.social-media a:hover {
+.social-media a:hover,
+.tileHeadline a:hover {
     color: #2c786e;
 }
 
@@ -292,11 +294,18 @@ nav ul.supermenu li:nth-last-child(3){
     padding-bottom: 0px;
 }
 
-.sevicios-container li a {
+.sevicios-container li a,
+.sevicios-container li a:visited,
+#portal-siteactions li a,
+#portal-siteactions li a:visited {
     text-decoration: none;
     color: #2C4E78;
 }
 
+.sevicios-container li a:hover,
+#portal-siteactions li a:hover {
+    color: #2c786e;
+}
 
 /* footer */
 footer {
@@ -668,7 +677,6 @@ div.collection_im_without_summary div.documentByLine{
 
 #rotatednews li a{
     text-decoration: none;
-    color: #2C4E78;
 }
 
 .line-separated li{
@@ -723,10 +731,6 @@ div.collection_im_without_summary div.documentByLine{
     font-size: 1em;
     font-weight: normal;
     text-decoration: none;
-    color: #2c4E78;
-}
-
-.tileHeadline a:visited {
     color: #2c4E78;
 }
 
