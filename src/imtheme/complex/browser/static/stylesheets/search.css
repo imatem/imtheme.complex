@@ -41,7 +41,6 @@ For searchbox
   margin: auto;
 }
 
-
 .logintext{
   margin:10px;
 }
@@ -50,17 +49,11 @@ For searchbox
   margin:10px;
 }
 
-
-
 /*
 ******************************************************************
 For logos div
 ******************************************************************
 */
-
-#submenu-wrapper{
-  background-color: #DFE6E9;
-}
 
 .logos-home{
     /*padding: 10px;*/
@@ -69,21 +62,6 @@ For logos div
     max-width: 1200px;
     margin: auto;
     padding-bottom: 0px;
-  }
-ul.globallinks{
-    display: inline-grid;
-    float: right;
-    list-style-type: circle;
-    height: 193px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #DFE6E9;
-    padding-right: 10px;
-  }
-
-ul.globallinks li{
-    margin: 8px;
   }
 
 .imagelogos{
@@ -96,24 +74,12 @@ ul.globallinks li{
   background-color: #DFE6E9;
 }
 
-
-/*@media screen and (min-width : 1200px)  {
-
-}*/
-
 @media screen and (min-width : 1024px) and (max-width : 1199px) {
 
   .logos-home{
     max-width: 1024px;
     margin: auto;
   }
-
-/*  .imagelogos{
-    padding-right: 20px;
-    max-width: 256px;
-  }*/
-
-
 }
 
 
@@ -128,11 +94,6 @@ ul.globallinks li{
     max-width: 172px;
   }
 
-  ul.globallinks li{
-    margin: 4px;
-    font-size: 80%;
-  }
-
   .alltools{
     max-width: 768px;
   }
@@ -144,8 +105,6 @@ ul.globallinks li{
     margin: 3px;
     font-size: 80%;
   }
-
-
 }
 
 @media screen and (max-width: 480px){
@@ -160,22 +119,14 @@ ul.globallinks li{
     max-width: 120px;
   }
 
-  ul.globallinks{
-    padding-right: 5px;
-  }
-
-  ul.globallinks li{
-    margin: 4px;
-  }
-
   .alltools{
     max-width: 480px;
 
   }
+
   #portal-searchbox{
     padding-right: 0px;
   }
-
 
   #searchGadget{
     max-width: 8.5em !important;
@@ -187,17 +138,6 @@ ul.globallinks li{
   }
 
   .logintext2{
-    /*margin: 3px;*/
-    /*font-size: 80%;*/
     display: none;
   }
-
 }
-
-/*iPhone Landscape*/
-/*@media screen and (min-width: 321px) and (max-width: 479px) {
-}*/
-
-/*iPhone Portrait*/
-/*@media screen and (max-width: 320px) {
-}*/
