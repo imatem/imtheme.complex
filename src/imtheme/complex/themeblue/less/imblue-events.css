@@ -1,25 +1,48 @@
 .grid-container img {
     width: 100%;
 }
-  
+
 .grid-container {
     max-width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    column-gap: 12px;
-    row-gap: 6px;
+    column-gap: 25px;
+    row-gap: 60px;
 }
-  
+
 .grid-container li {
     list-style: none;
+    background-color: white;
+    padding: 13px;
 }
-  
+
 .grid-container li a {
       text-decoration: none;
       border-bottom: 0;
 }
-  
+
+.congress-title {
+    color: #2C4E78;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 11px;
+}
+
+.congress-date {
+    color: #2C4E78;
+    font-family: arial;
+    font-size: 14px;
+}
+
+.congress-place {
+    color: #2C4E78;
+    font-family: arial;
+    font-size: 12px;
+}
+
+
 @media (min-width: 660px) {
     .grid-container{
         grid-template-columns: 1fr 1fr 1fr 1fr;
