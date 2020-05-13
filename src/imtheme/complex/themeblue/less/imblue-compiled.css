@@ -126,6 +126,8 @@ nav ul.supermenu li:nth-last-child(3){
     justify-content: center;
     padding-right: 10px;
     padding-left: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .submenu-accions ul a{
@@ -443,15 +445,15 @@ footer {
     #footer-container ul li{
         font-size:  16px;
     }
-    
+
     .footer-action ul li {
         margin-bottom: 15px;
     }
-    
+
     .footer-center ul li:last-child, .footer-phone {
         margin-top: 23px;
     }
-    
+
     .footer-center ul li:first-child {
         margin-bottom: 23px;
     }

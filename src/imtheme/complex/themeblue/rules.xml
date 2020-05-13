@@ -29,8 +29,9 @@
         <theme href="index.html"/>
         <!-- CSS -->
         <after css:theme-children="head" css:content="head link" />
-        <after css:theme-children="head" css:content="head style" />
+        <before css:theme-children="head" css:content="head style" />
         <replace css:theme-children="#my-topnav" css:content-children="#portal-globalnav" />
+        <replace css:theme-children=".submenu-accions" css:content-children="#portal_actions" />
         <drop css:content=".globalSectionsLevel1" />
         <drop css:theme="#slider-wrapper" />
         <replace css:theme-children="#main-container" css:content-children="#portal-columns" />
