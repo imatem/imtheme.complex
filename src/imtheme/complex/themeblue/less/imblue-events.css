@@ -60,3 +60,22 @@
     background-color: white;
     padding: 13px;
 }
+
+.link-category {
+    background-color: #B4CBE5;
+}
+
+.documentFirstHeading {
+    font-size: 2em;
+    color: #2c4e78;
+}
+
+.documentDescription {
+    line-height: 30px;
+    color: grey;
+}
+
+
+.dl.portlet dt{
+    background-color: #B4CBE5;
+}
