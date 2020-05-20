@@ -48,8 +48,10 @@ En ZMI -> portal_setup /Import
     * import selected steps
 * Configuración del tema: Activar Plone Theme: imblue
 
+* de portal_skins borrar folder_congresos_view
 * En folder de congresos 2019 seleccionar vista folder_congresos_view
-* remplazar vista folder_congresos_view en portal_skins
+
+
 
 Contribute
 ----------
