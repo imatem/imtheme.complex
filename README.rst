@@ -39,12 +39,17 @@ Actualización deseada
 Actualizacion actual
 --------------------
 
+imtheme.complex > blue
+matem.congresos > branch themeblue
+
 En ZMI -> portal_setup /Import
 * Select Profile imtheme.complex (imblue)
     * imtheme.complex various import handlers Post install import step from imtheme.complex
     * import selected steps
 * Configuración del tema: Activar Plone Theme: imblue
 
+* En folder de congresos 2019 seleccionar vista folder_congresos_view
+* remplazar vista folder_congresos_view en portal_skins
 
 Contribute
 ----------
