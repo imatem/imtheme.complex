@@ -25,10 +25,10 @@
 .congress-title {
     color: #2C4E78;
     font-family: 'Open Sans';
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 11px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 22px;
 }
 
 .congress-date {
@@ -48,4 +48,15 @@
     .grid-container{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+}
+
+.main-container-grid {
+    display: grid;
+    grid-template-columns: 1fr minmax(200px, 280px);
+}
+
+.congress-image li {
+    list-style: none;
+    background-color: white;
+    padding: 13px;
 }
