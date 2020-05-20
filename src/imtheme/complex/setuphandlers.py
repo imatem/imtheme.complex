@@ -19,25 +19,41 @@ def post_install(context):
     # Do something at the end of the installation of this package.
     avisos = api.content.get('/inicio/1/2/copy_of_avisos/')
     avisos.setTitle('AVISOS')
-    avisos = api.content.get('/inicio/1/2/copy_of_movimiento-academico')
-    avisos.setTitle('INTERCAMBIO ACADÉMICO')
-    # menu
+    avisos.reindexObject(idxs=['Title'])
+    intercambio = api.content.get('/inicio/1/2/copy_of_movimiento-academico')
+    intercambio.setTitle('INTERCAMBIO ACADÉMICO')
+    intercambio.reindexObject(idxs=['Title'])
+
+    # Rename menu items
     act = api.content.get('/actividades')
     act.setTitle('Actividades académicas')
     act.reindexObject(idxs=['Title'])
-    act = api.content.get('/servicios')
-    act.setTitle('Servicios internos')
-    act.reindexObject(idxs=['Title'])
-    for name in ['/docencia', '/divulgacion', '/vinculacion', '/unidad']:
-        act = api.content.get(name)
-        act.setExcludeFromNav(True)
-        act.reindexObject()
+    servicios = api.content.get('/servicios')
+    servicios.setTitle('Servicios internos')
+    servicios.reindexObject(idxs=['Title'])
+
+    # hide items
+    for name in ['/docencia', '/vinculacion', '/unidad']:
+        item = api.content.get(name)
+        item.setExcludeFromNav(True)
+        item.reindexObject()
+
+    # new content
     portal = api.portal.get()
-    portal.moveObject('servicios', 18)
     biblio = api.content.create(type='Folder', title='Bibliotecas', container=portal)
     api.content.transition(obj=biblio, transition='publish_internally')
     api.content.transition(obj=biblio, transition='publish_externally')
-    portal.moveObject('bibliotecas', 18)
+
+    # sort
+    portal.moveObject('fsd', 2)
+    portal.moveObject('divulgacion', 4)
+    portal.moveObject('actividades', 5)
+    portal.moveObject('seminarios', 6)
+    portal.moveObject('bibliotecas', 7)
+    portal.moveObject('servicios', 8)
+    putils = api.portal.get_tool(name='plone_utils')
+    putils.reindexOnReorder(portal)
+
 
 def uninstall(context):
     """Uninstall script"""

@@ -29,12 +29,20 @@ Install imtheme.complex by adding it to your buildout::
 
 and then running ``bin/buildout``
 
+Actualización deseada
+----------------------
+
 * Desinstalar imtheme.complex
 * Configuración del tema: Desactivar Plone Theme: complex
 * Desinstalar IM responsivetheme
 
+Actualizacion actual
+--------------------
+
 En ZMI -> portal_setup /Import
 * Select Profile imtheme.complex (imblue)
+    * imtheme.complex various import handlers Post install import step from imtheme.complex
+    * import selected steps
 * Configuración del tema: Activar Plone Theme: imblue
 
 
