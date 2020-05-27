@@ -792,3 +792,12 @@ div.collection_im_without_summary div.documentByLine{
 #rotatedmore:hover {
     color: #2c786e;
 }
+
+
+#edit-bar,
+#content-views,
+#contentActionMenus,
+#contentActionMenus dl.actionMenu a {
+    background-color: #2e4f77;
+    border-color: #2e4f77;
+}
