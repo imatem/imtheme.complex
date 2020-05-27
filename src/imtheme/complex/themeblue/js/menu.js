@@ -1,5 +1,5 @@
 function myFunction() {
-  var x = document.getElementById("my-topnav");
+  var x = document.getElementById("portal-globalnav");
   if (x.className === "supermenu") {
     x.className += " responsive";
   } else {

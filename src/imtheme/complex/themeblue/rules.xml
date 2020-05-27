@@ -8,7 +8,7 @@
     <rules css:if-content=".section-inicio">
         <theme href="index.html" css:if-content=".section-inicio" />
         <!-- <replace css:theme-children=".session" css:content-children=".sesionimg" /> -->
-        <replace css:theme-children="#my-topnav" css:content-children="#portal-globalnav" />
+        <replace css:theme-children="#portal-globalnav" css:content-children="#portal-globalnav" />
         <drop css:content=".globalSectionsLevel1" />
         <replace css:theme-children=".submenu-accions" css:content-children="#portal_actions" />
         <!-- move roler -->
@@ -30,9 +30,13 @@
         <!-- CSS -->
         <after css:theme-children="head" css:content="head link" />
         <before css:theme-children="head" css:content="head style" />
-        <replace css:theme-children="#my-topnav" css:content-children="#portal-globalnav" />
+        <!-- Script -->
+        <after css:theme-children="head" css:content="head script" />
+        <merge attributes="class" css:theme="body" css:content="body" />
+        <!-- -->
+        <replace css:theme-children="#portal-globalnav" css:content-children="#portal-globalnav" />
         <replace css:theme-children=".submenu-accions" css:content-children="#portal_actions" />
-        <drop css:content=".globalSectionsLevel1" />
+        <!-- <drop css:content=".globalSectionsLevel1" /> -->
         <drop css:theme="#slider-wrapper" />
         <replace css:theme-children="#main-container" css:content-children="#portal-columns" />
         <drop css:theme="footer" />

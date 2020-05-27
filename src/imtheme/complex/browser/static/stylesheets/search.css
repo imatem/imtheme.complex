@@ -1,5 +1,5 @@
 /*For menu display */
-#portal-globalnav{
+/* #portal-globalnav{
     background-image: linear-gradient(#0F2B4C, #2D4F79) !important;
     margin: 0px !important;
 }
@@ -8,11 +8,11 @@
    background-image: linear-gradient(#0F2B4C, #2D4F79) !important;
    color: white;
 
-   }
+   } */
 
-#mainnavigation ul{
+/* #mainnavigation ul{
   padding: 0px !important;
-}
+} */
 
 
 /*
@@ -20,16 +20,16 @@
 For searchbox
 ******************************************************************
 */
-#portal-searchbox{
+/* #portal-searchbox{
   clear: none !important;
   margin: 3px !important;
   padding-right: 10px;
 
-}
+} */
 
-.searchField{
+/* .searchField{
   height: 30px;
-}
+} */
 
 .tools{
   background-color: #B1C5DA;
@@ -41,13 +41,13 @@ For searchbox
   margin: auto;
 }
 
-.logintext{
+/* .logintext{
   margin:10px;
-}
+} */
 
-.logintext2{
+/* .logintext2{
   margin:10px;
-}
+} */
 
 /*
 ******************************************************************
@@ -55,14 +55,13 @@ For logos div
 ******************************************************************
 */
 
-.logos-home{
-    /*padding: 10px;*/
+/* .logos-home{
     height: 193px;
     background-color: #DFE6E9;
     max-width: 1200px;
     margin: auto;
     padding-bottom: 0px;
-  }
+  } */
 
 .imagelogos{
   float: left;
