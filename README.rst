@@ -32,9 +32,11 @@ and then running ``bin/buildout``
 Actualización deseada
 ----------------------
 
-* Desinstalar imtheme.complex
 * Configuración del tema: Desactivar Plone Theme: complex
+* Desinstalar imtheme.complex
 * Desinstalar IM responsivetheme
+Remover del buildout
+
 
 Actualizacion actual
 --------------------
