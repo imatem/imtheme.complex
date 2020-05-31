@@ -35,8 +35,27 @@ Actualización deseada
 * Configuración del tema: Desactivar Plone Theme: complex
 * Desinstalar imtheme.complex
 * Desinstalar IM responsivetheme
-Remover del buildout
+Remover del buildout / borrar de src-git
 
+portal_view_customizations
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+zope.interface.interface-plone.colophon
+zope.interface.interface-plone.footer
+
+portal_skins
+~~~~~~~~~~~~
+facebook.png
+folder_congresos_view
+twitter.png
+
+Collage
+~~~~~~~
+Unidades
+Festivales
+Galeria
+
+
+Agregar imtheme.blue
 
 Actualizacion actual
 --------------------
