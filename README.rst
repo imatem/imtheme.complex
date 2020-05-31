@@ -37,23 +37,19 @@ Actualización deseada
 * Desinstalar IM responsivetheme
 Remover del buildout / borrar de src-git
 
-portal_view_customizations
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-zope.interface.interface-plone.colophon
-zope.interface.interface-plone.footer
+* portal_view_customizations
+    * zope.interface.interface-plone.colophon
+    * zope.interface.interface-plone.footer
 
-portal_skins
-~~~~~~~~~~~~
-facebook.png
-folder_congresos_view
-twitter.png
+* portal_skins
+    * facebook.png
+    * folder_congresos_view
+    * twitter.png
 
-Collage
-~~~~~~~
-Unidades
-Festivales
-Galeria
-
+* Collage
+    * Unidades
+    * Festivales
+    * Galeria
 
 Agregar imtheme.blue
 
